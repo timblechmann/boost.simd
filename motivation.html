@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<title>bSIMD: Motivation</title>
+<title>Boost.SIMD: Motivation</title>
 <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -34,7 +34,7 @@
 <nav class="navbar navbar-default" role="navigation">
 <div class="container">
 <div class="navbar-header responsive-logo">
-<a class="navbar-brand" style="width: 10%" href="https://github.com/NumScale/boost.simd">bSIMD </a>
+<a class="navbar-brand" style="width: 10%" href="https://github.com/NumScale/boost.simd">Boost.SIMD </a>
 <a href="http://numscale.implicitweb.fr/" title="Numscale" style="display: block; width: 25%; text-align: right; float: right"><img src="numscale.png" alt="Numscale" style="width:100%; padding-top: 10px; padding-bottom: 10px; " align="right"></a>
 </div>
 </div>
@@ -117,15 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    _mm256_storeu_ps(&amp;res[i], r_avx);</div>
 <div class="line">  }</div>
 </div><!-- fragment --><p> To vectorize this for an ARM processor which has neon instructions, one could write the following code:</p>
-<div class="fragment"><div class="line">  float32x4_t v0_arm, v1_arm, r_arm;</div>
-<div class="line">  std::size_t f_card_arm = 4;</div>
-<div class="line">  <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt; size; i += f_card_arm){</div>
-<div class="line">    v0_arm = vld1q_f32(&amp;data0[i]);</div>
-<div class="line">    v1_arm = vld1q_f32(&amp;data1[i]);</div>
-<div class="line">    r_arm  = vaddq_f32(v0_arm, v1_arm);</div>
-<div class="line">    vst1q_f32(&amp;res[i], r_arm);</div>
-<div class="line">  }</div>
-</div><!-- fragment --><p> In each of these examples, we have written code for two different generations of intel processors and an ARM processors. Each of these functions are non-portable to other architectures, for example, the intel code will not run on intel processors which do not support these instruction sets or ARM or IBM processors. This means that a different version of this function must be written for each target architecture. Note also the fact that writing code using intrinsics functions requires hard coding variables such as the number of elements in a SIMD register. Clearly, coding in such a manner is time-consuming, error-prone and difficult to maintain and debug. It also requires being intimately familiar with the details of each processor manufacturer's API.</p>
+<div class="fragment"></div><!-- fragment --><p> In each of these examples, we have written code for two different generations of intel processors and an ARM processors. Each of these functions are non-portable to other architectures, for example, the intel code will not run on intel processors which do not support these instruction sets or ARM or IBM processors. This means that a different version of this function must be written for each target architecture. Note also the fact that writing code using intrinsics functions requires hard coding variables such as the number of elements in a SIMD register. Clearly, coding in such a manner is time-consuming, error-prone and difficult to maintain and debug. It also requires being intimately familiar with the details of each processor manufacturer's API.</p>
 <p>Another disadvantage of using raw intrinsics is the fact that compiler support varies greatly between vendor, operating system and architecture. For example, an SSE code which performs as expected on Linux may suffer from performance degradation, bugs or compiler warnings when compiled on Windows and vice-versa. The goal of <b>Boost.SIMD</b> is to abstract all of these disadvantages, leaving the user with one API, regardless of architecture, compiler or operating system. All known compiler bugs are also managed by <b>Boost.SIMD</b> to ensure the quick and efficient development of high performance portable software.</p>
 <p>For example, take the function to add two vectors. It may be written using <b>Boost.SIMD</b> as follows:</p>
 <div class="fragment"><div class="line">  <span class="keyword">namespace </span><a class="code" href="namespaceboost_1_1simd.html">bs</a> = <a class="code" href="namespaceboost_1_1simd.html">boost::simd</a>;</div>
@@ -149,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div>
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 12 2016 16:46:51 for bSIMD by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 12 2016 18:16:39 for Boost.SIMD by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

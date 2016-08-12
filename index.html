@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<title>bSIMD: Introduction</title>
+<title>Boost.SIMD: Introduction</title>
 <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -34,7 +34,7 @@
 <nav class="navbar navbar-default" role="navigation">
 <div class="container">
 <div class="navbar-header responsive-logo">
-<a class="navbar-brand" style="width: 10%" href="https://github.com/NumScale/boost.simd">bSIMD </a>
+<a class="navbar-brand" style="width: 10%" href="https://github.com/NumScale/boost.simd">Boost.SIMD </a>
 <a href="http://numscale.implicitweb.fr/" title="Numscale" style="display: block; width: 25%; text-align: right; float: right"><img src="numscale.png" alt="Numscale" style="width:100%; padding-top: 10px; padding-bottom: 10px; " align="right"></a>
 </div>
 </div>
@@ -98,7 +98,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <ul><li class="level1"><a href="#main-what">What is SIMD?</a></li>
 <li class="level1"><a href="#main-why">Why use Boost.SIMD?</a></li>
 <li class="level1"><a href="#main-support">Supported Compilers and Hardware</a></li>
-<li class="level1"><a href="#main-howto">How to use this documentation</a></li>
 </ul>
 </div>
 <div class="textblock"><p>Welcome to the world of portable, hassle free SIMD programming! <b>Boost.SIMD</b> was developed to simplify the difficult, tedious and often error-prone process of developing SIMD programs. <b>Boost.SIMD</b> is designed to seamlessly integrate into existing projects so that you can quickly and easily start developing high performance, portable and future proof software.</p>
@@ -132,15 +131,14 @@ Why use Boost.SIMD?</h1>
 <div class="line">    r_avx  = _mm256_add_ps(v0_avx, v1_avx);</div>
 <div class="line">    _mm256_storeu_ps(&amp;res[i], r_avx);</div>
 <div class="line">  }</div>
-</div><!-- fragment --><p> Both of these processor are manufactured by Intel yet two different versions of the code are required to get the best performance possible from the processors. Imagine the complication of moving to another manufacturer's processor! Take for example ARM processors, which are found in most smartphones. Development for a smart phone is much more difficult than for a desktop PC as you have significantly less processing power to play with as well as limited battery life to consider. Software performance is even more important in such a difficult environment! Thankfully the <b>Boost.SIMD</b> development team has been thinking about you so <b>Boost.SIMD</b> is designed to seamlessly integrate into any mobile development environment.</p>
-<p>Let's try re-write this same simple loop for a smartphone with a <code>NEON</code> equipped processorprocessor:</p>
-<div class="fragment"><div class="line">  float32x4_t v0_arm, v1_arm, r_arm;</div>
-<div class="line">  std::size_t f_card_arm = 4;</div>
-<div class="line">  <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt; size; i += f_card_arm){</div>
-<div class="line">    v0_arm = vld1q_f32(&amp;data0[i]);</div>
-<div class="line">    v1_arm = vld1q_f32(&amp;data1[i]);</div>
-<div class="line">    r_arm  = vaddq_f32(v0_arm, v1_arm);</div>
-<div class="line">    vst1q_f32(&amp;res[i], r_arm);</div>
+</div><!-- fragment --><p> Both of these processor are manufactured by Intel yet two different versions of the code are required to get the best performance possible from the processors. Imagine the complication of moving to another manufacturer's processor, for example IBM. Let's try re-write this same simple loop for a <code>VMX</code> equipped processor:</p>
+<div class="fragment"><div class="line">  float32x4_t v0_ibm, v1_ibm, r_ibm;</div>
+<div class="line">  std::size_t f_card_ibm = 4;</div>
+<div class="line">  <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt; size; i += f_card_ibm){</div>
+<div class="line">    v0_ibm = vec_ld(i, &amp;data0[0]);</div>
+<div class="line">    v1_ibm = vec_ld(i, &amp;data1[0]);</div>
+<div class="line">    r_ibm  = vec_add(v0_ibm, v1_ibm);</div>
+<div class="line">    vec_st(r_ibm, i, &amp;res[0]);</div>
 <div class="line">  }</div>
 </div><!-- fragment --><p> This is quicky getting complicated and annoying. Wouldn't life be much easier if someone else took care of this mess? Imagine being able to write one version of your code, which has optimal performance across all architectures, compilers and operating systems? Imagine not having to worry about re-writing your code for each new processor released? Well, imagine no more and behold the beauty and simplicity of <b>Boost.SIMD</b>!</p>
 <div class="fragment"><div class="line">  <span class="keyword">namespace </span><a class="code" href="namespaceboost_1_1simd.html">bs</a> = <a class="code" href="namespaceboost_1_1simd.html">boost::simd</a>;</div>
@@ -184,33 +182,9 @@ Supported Compilers and Hardware</h1>
 <tr>
 <td>clang++ </td><td>3.5 and above </td></tr>
 <tr>
-<td>Microsoft Visual Studio </td><td>13.0 and above </td></tr>
+<td>Microsoft Visual Studio </td><td>15.0 and above </td></tr>
 </table>
-</center><h2>Standalone X86</h2>
-<p><b>Boost.SIMD</b> requires <b>Boost</b> version 1.60 or newer.</p>
-<h2>Adding Paid Architectures</h2>
-<p>To be completed...</p>
-<h1><a class="anchor" id="main-howto"></a>
-How to use this documentation</h1>
-<hr/>
-<p> The structure of this documention (available in the menu to the left) is as follows:</p>
-<ul>
-<li><a class="el" href="tutorials.html">Tutorials</a><br />
- Tutorial for writing <b>Boost.SIMD</b> code.</li>
-<li><a class="el" href="group__group-api.html">User API</a><br />
- Public functions and type API of <b>Boost.SIMD</b></li>
-<li><a class="el" href="group__group-concept.html">Concepts</a><br />
- Concepts defined and used throughout <b>Boost.SIMD</b>.</li>
-<li><a class="el" href="group__group-config.html">Configuration</a><br />
- Macros which are defined to control the configuration of <b>Boost.SIMD</b> code.</li>
-<li><a class="el" href="group__group-ext.html">Library extension points</a><br />
- Documentation for extension points for library's components. This documentation is useful for people wanting to extend <b>Boost.SIMD</b> to work with their own types.</li>
-<li><a class="el" href="group__group-hierarchy.html">Hierarchies</a><br />
- Documentation for the predefined type hierarchy used by the library.</li>
-<li><a class="el" href="group__group-detail.html">Implementation details</a><br />
- Documentation of library implementation details. This section is useful for those wishing to understand the library internals and those wishing to contribute to the development of <b>Boost.SIMD</b>.</li>
-</ul>
-<hr/>
+</center><p><b>Boost.SIMD</b> requires <b>Boost</b> version 1.60 or newer. </p><hr/>
  </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
@@ -220,7 +194,7 @@ How to use this documentation</h1>
 </div>
 </div>
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 12 2016 16:47:41 for bSIMD by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 12 2016 18:17:24 for Boost.SIMD by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
