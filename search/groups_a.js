@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['reduction_20callable_20objects',['Reduction Callable Objects',['../group__group-callable-reduction.html',1,'']]],
-  ['reduction_20functions',['Reduction Functions',['../group__group-reduction.html',1,'']]]
+  ['predicates_20functions',['Predicates functions',['../group__group-predicates.html',1,'']]]
 ];

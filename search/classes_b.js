@@ -1,18 +1,7 @@
 var searchData=
 [
-  ['scalar_5fstorage',['scalar_storage',['../structboost_1_1simd_1_1scalar__storage.html',1,'boost::simd']]],
-  ['simd_5f',['simd_',['../structboost_1_1simd_1_1simd__.html',1,'boost::simd']]],
-  ['simd_5femulation_5f',['simd_emulation_',['../structboost_1_1simd_1_1simd__emulation__.html',1,'boost::simd']]],
-  ['simd_5fstorage',['simd_storage',['../structboost_1_1simd_1_1detail_1_1simd__storage.html',1,'boost::simd::detail']]],
-  ['smallest_5finteger',['smallest_integer',['../structboost_1_1simd_1_1limits_1_1smallest__integer.html',1,'boost::simd::limits']]],
-  ['sse2_5f',['sse2_',['../structboost_1_1simd_1_1sse2__.html',1,'boost::simd']]],
-  ['sse3_5f',['sse3_',['../structboost_1_1simd_1_1sse3__.html',1,'boost::simd']]],
-  ['sse4_5f1_5f',['sse4_1_',['../structboost_1_1simd_1_1sse4__1__.html',1,'boost::simd']]],
-  ['sse4_5f2_5f',['sse4_2_',['../structboost_1_1simd_1_1sse4__2__.html',1,'boost::simd']]],
-  ['sse4a_5f',['sse4a_',['../structboost_1_1simd_1_1sse4a__.html',1,'boost::simd']]],
-  ['sse_5f',['sse_',['../structboost_1_1simd_1_1sse__.html',1,'boost::simd']]],
-  ['ssse3_5f',['ssse3_',['../structboost_1_1simd_1_1ssse3__.html',1,'boost::simd']]],
-  ['storage_5fof',['storage_of',['../structboost_1_1simd_1_1detail_1_1storage__of.html',1,'boost::simd::detail']]],
-  ['storage_5fof_3c_20type_2c_20cardinal_2c_20limits_3c_20simdfamily_20_3e_3a_3aparent_20_3e',['storage_of&lt; Type, Cardinal, limits&lt; SIMDFamily &gt;::parent &gt;',['../structboost_1_1simd_1_1detail_1_1storage__of.html',1,'boost::simd::detail']]],
-  ['storage_5fstatus',['storage_status',['../structboost_1_1simd_1_1detail_1_1storage__status.html',1,'boost::simd::detail']]]
+  ['pack',['pack',['../classboost_1_1simd_1_1pack.html',1,'boost::simd']]],
+  ['pack_5f',['pack_',['../structboost_1_1simd_1_1pack__.html',1,'boost::simd']]],
+  ['pack_5f_3c_20boost_3a_3adispatch_3a_3aunspecified_5f_3c_20t_20_3e_2c_20x_20_3e',['pack_&lt; boost::dispatch::unspecified_&lt; T &gt;, X &gt;',['../structboost_1_1simd_1_1pack___3_01boost_1_1dispatch_1_1unspecified___3_01_t_01_4_00_01_x_01_4.html',1,'boost::simd']]],
+  ['property_5fof_3c_20boost_3a_3asimd_3a_3alogical_3c_20t_20_3e_2c_20origin_20_3e',['property_of&lt; boost::simd::logical&lt; T &gt;, Origin &gt;',['../structboost_1_1dispatch_1_1ext_1_1property__of_3_01boost_1_1simd_1_1logical_3_01_t_01_4_00_01_origin_01_4.html',1,'boost::dispatch::ext']]]
 ];

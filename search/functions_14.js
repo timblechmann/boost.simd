@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['where',['where',['../group__group-boolean_gad752533dc7f70e61363c8755655458fa.html#gad752533dc7f70e61363c8755655458fa',1,'boost::simd']]]
+  ['zero',['Zero',['../group__group-constant_gae164aaf5db0db0ba079c2f338d2d794d.html#gae164aaf5db0db0ba079c2f338d2d794d',1,'boost::simd']]]
 ];

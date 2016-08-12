@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['largest_5finteger',['largest_integer',['../structboost_1_1simd_1_1limits_1_1largest__integer.html',1,'boost::simd::limits']]],
-  ['limits',['limits',['../structboost_1_1simd_1_1limits.html',1,'boost::simd']]],
-  ['limits_3c_20boost_3a_3asimd_3a_3aavx_5f_20_3e',['limits&lt; boost::simd::avx_ &gt;',['../structboost_1_1simd_1_1limits.html',1,'boost::simd']]],
-  ['limits_3c_20boost_3a_3asimd_3a_3aneon_5f_20_3e',['limits&lt; boost::simd::neon_ &gt;',['../structboost_1_1simd_1_1limits.html',1,'boost::simd']]],
-  ['limits_3c_20boost_3a_3asimd_3a_3asse2_5f_20_3e',['limits&lt; boost::simd::sse2_ &gt;',['../structboost_1_1simd_1_1limits.html',1,'boost::simd']]],
-  ['logical',['logical',['../structboost_1_1simd_1_1logical.html',1,'boost::simd']]],
-  ['logical_5f',['logical_',['../structboost_1_1simd_1_1logical__.html',1,'boost::simd']]]
+  ['generic_5f',['generic_',['../classboost_1_1dispatch_1_1generic__.html',1,'']]],
+  ['get_5fdispatcher',['get_dispatcher',['../structboost_1_1simd_1_1detail_1_1get__dispatcher.html',1,'boost::simd::detail']]],
+  ['get_5fimplementation',['get_implementation',['../structboost_1_1simd_1_1detail_1_1get__implementation.html',1,'boost::simd::detail']]],
+  ['get_5fimplementation_3c_20boost_3a_3adispatch_3a_3adetail_3a_3ageneric_5fdispatcher_3c_20d_2c_20tag_20_3e_20_3e',['get_implementation&lt; boost::dispatch::detail::generic_dispatcher&lt; D, Tag &gt; &gt;',['../structboost_1_1simd_1_1detail_1_1get__implementation_3_01boost_1_1dispatch_1_1detail_1_1generic_f59a4f81981b31dcc12c923fc14a3755.html',1,'boost::simd::detail']]]
 ];

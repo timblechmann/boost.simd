@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['is_5fnot_5fscalar',['is_not_scalar',['../structboost_1_1simd_1_1is__not__scalar.html',1,'boost::simd']]],
-  ['is_5fscalar',['is_scalar',['../structboost_1_1simd_1_1is__scalar.html',1,'boost::simd']]]
+  ['fast_5ftag',['fast_tag',['../structboost_1_1simd_1_1fast__tag.html',1,'boost::simd']]],
+  ['fundamental_5f',['fundamental_',['../classboost_1_1dispatch_1_1fundamental__.html',1,'']]]
 ];

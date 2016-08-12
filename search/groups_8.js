@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operators',['Operators',['../group__group-operator.html',1,'']]]
+  ['library_20extension_20points',['Library extension points',['../group__group-ext.html',1,'']]]
 ];
