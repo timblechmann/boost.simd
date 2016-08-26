@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_20page',['Main Page',['../index.html',1,'']]],
-  ['motivation',['Motivation',['../motivation.html',1,'']]]
+  ['a_20simd_20loop',['A SIMD Loop',['../tutorial-simd-loop.html',1,'']]]
 ];

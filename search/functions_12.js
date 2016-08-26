@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['valmax',['Valmax',['../group__group-constant_ga43f88f597036ac2da1616bcfcc0e55ac.html#ga43f88f597036ac2da1616bcfcc0e55ac',1,'boost::simd::Valmax()'],['../group__group-constant_gadca8dcd350f9b2466a948511c5ecc83a.html#gadca8dcd350f9b2466a948511c5ecc83a',1,'boost::boost::simd::Valmax()'],['../group__group-constant_ga43f88f597036ac2da1616bcfcc0e55ac.html#ga43f88f597036ac2da1616bcfcc0e55ac',1,'boost::boost::simd::Valmax() -&gt; decltype(detail::valmax(boost::dispatch::as_&lt; T &gt;']]],
-  ['valmin',['Valmin',['../group__group-constant_ga6975dceac710f1a491c905a0db454b1e.html#ga6975dceac710f1a491c905a0db454b1e',1,'boost::simd::Valmin()'],['../group__group-constant_ga903746cda4118823119632c6899bdcde.html#ga903746cda4118823119632c6899bdcde',1,'boost::boost::simd::Valmin()'],['../group__group-constant_ga6975dceac710f1a491c905a0db454b1e.html#ga6975dceac710f1a491c905a0db454b1e',1,'boost::boost::simd::Valmin() -&gt; decltype(detail::valmin(boost::dispatch::as_&lt; T &gt;']]],
-  ['value',['value',['../structboost_1_1simd_1_1logical.html#a5d12a5a18db57c9adcaaf2916c27270f',1,'boost::simd::logical::value()'],['../structboost_1_1boost_1_1simd_1_1logical.html#a42ba56f17e5a8c12b4fb3da93714845c',1,'boost::boost::simd::logical::value()']]]
+  ['ulp',['ulp',['../group__group-ieee_ga010f058e5b0663c00d7a73b6854df090.html#ga010f058e5b0663c00d7a73b6854df090',1,'boost::simd']]],
+  ['ulpdist',['ulpdist',['../group__group-ieee_ga8bfb596d877fba2d6d84f35eee413426.html#ga8bfb596d877fba2d6d84f35eee413426',1,'boost::simd']]],
+  ['unary_5fminus',['unary_minus',['../group__group-operator_gae310c9b9cd252cd6338eb03f770fcd18.html#gae310c9b9cd252cd6338eb03f770fcd18',1,'boost::simd']]],
+  ['unary_5fplus',['unary_plus',['../group__group-operator_ga314256697157ac145249dcd67ca84893.html#ga314256697157ac145249dcd67ca84893',1,'boost::simd']]]
 ];

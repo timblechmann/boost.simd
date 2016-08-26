@@ -1,21 +1,14 @@
 var searchData=
 [
-  ['dec',['dec',['../group__group-arithmetic_ga6c43a3f716edc820ca7e0b5c3d04b33a.html#ga6c43a3f716edc820ca7e0b5c3d04b33a',1,'boost::simd']]],
-  ['dec_2ehpp',['dec.hpp',['../dec_8hpp.html',1,'']]],
-  ['default_5fsite',['default_site',['../structboost_1_1boost_1_1dispatch_1_1ext_1_1default__site.html',1,'boost::boost::dispatch::ext']]],
-  ['default_5fsite',['default_site',['../group__group-hierarchy_gaf65132fbf030a37432db44663e28fc4d.html#gaf65132fbf030a37432db44663e28fc4d',1,'boost::boost::dispatch']]],
-  ['deginrad',['Deginrad',['../group__group-constant_ga5ba8ce5358217fa40416fec17cbdaa44.html#ga5ba8ce5358217fa40416fec17cbdaa44',1,'boost::simd::Deginrad()'],['../group__group-callable-constant_gad7ebc840e90ab01210e4e0feb55399b2.html#gad7ebc840e90ab01210e4e0feb55399b2',1,'boost::simd::functional::deginrad()']]],
-  ['deginrad_2ehpp',['deginrad.hpp',['../deginrad_8hpp.html',1,'']]],
-  ['deinterleave_5ffirst',['deinterleave_first',['../group__group-swar_ga65d9db339b20fbf45fb0cf9664cbc7b6.html#ga65d9db339b20fbf45fb0cf9664cbc7b6',1,'boost::simd']]],
-  ['deinterleave_5ffirst_2ehpp',['deinterleave_first.hpp',['../deinterleave__first_8hpp.html',1,'']]],
-  ['deinterleave_5fsecond',['deinterleave_second',['../group__group-swar_ga676c9f5103cd235b7d464da8ddcc33f9.html#ga676c9f5103cd235b7d464da8ddcc33f9',1,'boost::simd']]],
-  ['dist',['dist',['../group__group-arithmetic_ga47070f34d0679f5553b9916118c48d6e.html#ga47070f34d0679f5553b9916118c48d6e',1,'boost::simd']]],
-  ['dist_2ehpp',['dist.hpp',['../dist_8hpp.html',1,'']]],
-  ['div',['div',['../group__group-operator_ga1044e26748ecfbc3957ea3cee7a7fe7c.html#ga1044e26748ecfbc3957ea3cee7a7fe7c',1,'boost::simd']]],
-  ['div_2ehpp',['div.hpp',['../div_8hpp.html',1,'']]],
-  ['divides',['divides',['../group__group-operator_ga762a4fbdbdbb859f032d2a5672d1cc19.html#ga762a4fbdbdbb859f032d2a5672d1cc19',1,'boost::boost::simd::divides()'],['../group__group-operator_ga02a62c24328c290372374ade200b7dc0.html#ga02a62c24328c290372374ade200b7dc0',1,'boost::simd::divides()']]],
-  ['divides_2ehpp',['divides.hpp',['../divides_8hpp.html',1,'']]],
-  ['dot',['dot',['../group__group-reduction_ga088fa0503d5fe144d448db9a9f1baa6e.html#ga088fa0503d5fe144d448db9a9f1baa6e',1,'boost::simd']]],
-  ['dot_2ehpp',['dot.hpp',['../dot_8hpp.html',1,'']]],
-  ['double_5f',['double_',['../structboost_1_1boost_1_1dispatch_1_1double__.html',1,'boost::boost::dispatch']]]
+  ['dec',['dec',['../group__group-arithmetic_ga0c757594d4a655e17b18d99ea1788d3d.html#ga0c757594d4a655e17b18d99ea1788d3d',1,'boost::simd']]],
+  ['decorator_5f',['decorator_',['../classdecorator__.html',1,'']]],
+  ['deginrad',['Deginrad',['../group__group-constant_ga5ba8ce5358217fa40416fec17cbdaa44.html#ga5ba8ce5358217fa40416fec17cbdaa44',1,'boost::simd']]],
+  ['deinterleave_5ffirst',['deinterleave_first',['../group__group-swar_gab669729a1c14005370f62f92cd9582d0.html#gab669729a1c14005370f62f92cd9582d0',1,'boost::simd']]],
+  ['deinterleave_5fsecond',['deinterleave_second',['../group__group-swar_gaee66a0371a24c012bd69b566813da671.html#gaee66a0371a24c012bd69b566813da671',1,'boost::simd']]],
+  ['dist',['dist',['../group__group-arithmetic_ga3fd74a7da9bd716454ee2cc29e149ec5.html#ga3fd74a7da9bd716454ee2cc29e149ec5',1,'boost::simd']]],
+  ['div',['div',['../group__group-arithmetic_gaf3364d8895c8f13361ac887168514da0.html#gaf3364d8895c8f13361ac887168514da0',1,'boost::simd']]],
+  ['divides',['divides',['../group__group-operator_ga87d6929ebab9ae9ffba5bfc1ddc19458.html#ga87d6929ebab9ae9ffba5bfc1ddc19458',1,'boost::simd']]],
+  ['dot',['dot',['../group__group-reduction_gaff8d315fafcf6c4112c2f1b2683da193.html#gaff8d315fafcf6c4112c2f1b2683da193',1,'boost::simd']]],
+  ['decorators',['Decorators',['../group__group-decorator.html',1,'']]],
+  ['distance_20between_20points',['Distance between Points',['../tutorial-distance.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['processing_20data_20the_20simd_20way',['Processing Data the SIMD Way',['../tutorial-data.html',1,'']]]
+  ['motivation',['Motivation',['../motivation.html',1,'']]],
+  ['memory_20alignment',['Memory Alignment',['../tutorial-memory.html',1,'']]]
 ];

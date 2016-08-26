@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sum_20of_20arrays',['Sum of Arrays',['../tutorial-sum.html',1,'']]]
+  ['runtime_20extension_20selection',['Runtime Extension Selection',['../tutorial-runtime.html',1,'']]]
 ];

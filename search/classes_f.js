@@ -1,25 +1,6 @@
 var searchData=
 [
-  ['target_5f',['target_',['../structboost_1_1boost_1_1dispatch_1_1target__.html',1,'boost::boost::dispatch']]],
-  ['tieable_5f',['tieable_',['../structboost_1_1boost_1_1dispatch_1_1tieable__.html',1,'boost::boost::dispatch']]],
-  ['type_5f',['type_',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20allbits_5f_20_3e',['type_&lt; allbits_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20f_20_3e',['type_&lt; F &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20fast_5ftag_20_3e',['type_&lt; fast_tag &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20formal_5f_20_3e',['type_&lt; formal_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20inf_5f_20_3e',['type_&lt; inf_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20maxleftshift_5f_20_3e',['type_&lt; maxleftshift_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20minf_5f_20_3e',['type_&lt; minf_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20mone_5f_20_3e',['type_&lt; mone_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20mzero_5f_20_3e',['type_&lt; mzero_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20one_5f_20_3e',['type_&lt; one_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20raw_5ftag_20_3e',['type_&lt; raw_tag &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20residual_5ftag_20_3e',['type_&lt; residual_tag &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20saturated_5ftag_20_3e',['type_&lt; saturated_tag &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20signmask_5f_20_3e',['type_&lt; signmask_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20std_5ftag_20_3e',['type_&lt; std_tag &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20twotonmb_5f_20_3e',['type_&lt; twotonmb_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20valmax_5f_20_3e',['type_&lt; valmax_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20valmin_5f_20_3e',['type_&lt; valmin_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]],
-  ['type_5f_3c_20zero_5f_20_3e',['type_&lt; zero_ &gt;',['../structboost_1_1boost_1_1dispatch_1_1type__.html',1,'boost::boost::dispatch']]]
+  ['unchecker',['unchecker',['../structboost_1_1simd_1_1details_1_1unchecker.html',1,'boost::simd::details']]],
+  ['unchecker_3c_20iterator_2c_20typenameboost_3a_3aenable_5fif_5fhas_5ftype_3c_20typenameiterator_3a_3a_5funchecked_5ftype_20_3e_3a_3atype_20_3e',['unchecker&lt; Iterator, typenameboost::enable_if_has_type&lt; typenameIterator::_Unchecked_type &gt;::type &gt;',['../structboost_1_1simd_1_1details_1_1unchecker_3_01_iterator_00_01typenameboost_1_1enable__if__has_bc5d3660101b8b9f26a801eb8ab18532.html',1,'boost::simd::details']]],
+  ['unspecified_5f',['unspecified_',['../classunspecified__.html',1,'']]]
 ];

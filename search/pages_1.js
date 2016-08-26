@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tutorials',['Tutorials',['../tutorials.html',1,'']]]
+  ['distance_20between_20points',['Distance between Points',['../tutorial-distance.html',1,'']]]
 ];
