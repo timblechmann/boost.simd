@@ -1,22 +1,10 @@
 var searchData=
 [
-  ['tan_5f3pio_5f8_5f',['tan_3pio_8_',['../structboost_1_1simd_1_1tag_1_1tan__3pio__8__.html',1,'boost::simd::tag']]],
-  ['tanpio_5f8_5f',['tanpio_8_',['../structboost_1_1simd_1_1tag_1_1tanpio__8__.html',1,'boost::simd::tag']]],
-  ['ten_5f',['ten_',['../structboost_1_1simd_1_1tag_1_1ten__.html',1,'boost::simd::tag']]],
-  ['third_5f',['third_',['../structboost_1_1simd_1_1tag_1_1third__.html',1,'boost::simd::tag']]],
-  ['thirdrooteps_5f',['thirdrooteps_',['../structboost_1_1simd_1_1tag_1_1thirdrooteps__.html',1,'boost::simd::tag']]],
-  ['thousand_5f',['thousand_',['../structboost_1_1simd_1_1tag_1_1thousand__.html',1,'boost::simd::tag']]],
-  ['three_5f',['three_',['../structboost_1_1simd_1_1tag_1_1three__.html',1,'boost::simd::tag']]],
-  ['threeeps_5f',['threeeps_',['../structboost_1_1simd_1_1tag_1_1threeeps__.html',1,'boost::simd::tag']]],
-  ['threepio_5f4_5f',['threepio_4_',['../structboost_1_1simd_1_1tag_1_1threepio__4__.html',1,'boost::simd::tag']]],
-  ['twelve_5f',['twelve_',['../structboost_1_1simd_1_1tag_1_1twelve__.html',1,'boost::simd::tag']]],
-  ['twenty_5f',['twenty_',['../structboost_1_1simd_1_1tag_1_1twenty__.html',1,'boost::simd::tag']]],
-  ['two_5f',['two_',['../structboost_1_1simd_1_1tag_1_1two__.html',1,'boost::simd::tag']]],
-  ['twoopi_5f',['twoopi_',['../structboost_1_1simd_1_1tag_1_1twoopi__.html',1,'boost::simd::tag']]],
-  ['twopi_5f',['twopi_',['../structboost_1_1simd_1_1tag_1_1twopi__.html',1,'boost::simd::tag']]],
-  ['twopio_5f3_5f',['twopio_3_',['../structboost_1_1simd_1_1tag_1_1twopio__3__.html',1,'boost::simd::tag']]],
-  ['twoto31_5f',['twoto31_',['../structboost_1_1simd_1_1tag_1_1twoto31__.html',1,'boost::simd::tag']]],
-  ['twotom10_5f',['twotom10_',['../structboost_1_1simd_1_1tag_1_1twotom10__.html',1,'boost::simd::tag']]],
-  ['twotomnmbo_5f3_5f',['twotomnmbo_3_',['../structboost_1_1simd_1_1tag_1_1twotomnmbo__3__.html',1,'boost::simd::tag']]],
-  ['twotonmb_5f',['twotonmb_',['../structboost_1_1simd_1_1tag_1_1twotonmb__.html',1,'boost::simd::tag']]]
+  ['value_5fof',['value_of',['../structboost_1_1boost_1_1dispatch_1_1ext_1_1value__of.html',1,'boost::boost::dispatch::ext']]],
+  ['value_5fof',['value_of',['../structboost_1_1boost_1_1dispatch_1_1value__of.html',1,'boost::boost::dispatch']]],
+  ['value_5fof_3c_20s_3a_3avalue_5ftype_20_3e',['value_of&lt; S::value_type &gt;',['../structboost_1_1boost_1_1dispatch_1_1value__of.html',1,'boost::boost::dispatch::value_of&lt; S::value_type &gt;'],['../structboost_1_1boost_1_1dispatch_1_1ext_1_1value__of.html',1,'boost::boost::dispatch::ext::value_of&lt; S::value_type &gt;']]],
+  ['value_5fof_3c_20t_20_3e',['value_of&lt; T &gt;',['../structboost_1_1boost_1_1dispatch_1_1ext_1_1value__of.html',1,'boost::boost::dispatch::ext']]],
+  ['value_5fof_5fcv_3c_20t_20const_2c_20enable_20_3e',['value_of_cv&lt; T const, Enable &gt;',['../structboost_1_1boost_1_1dispatch_1_1ext_1_1value__of__cv_3_01T_01const_00_01Enable_01_4.html',1,'boost::boost::dispatch::ext']]],
+  ['vmx_5f',['vmx_',['../structboost_1_1boost_1_1simd_1_1vmx__.html',1,'boost::boost::simd']]],
+  ['void_5f',['void_',['../structboost_1_1boost_1_1dispatch_1_1void__.html',1,'boost::boost::dispatch']]]
 ];

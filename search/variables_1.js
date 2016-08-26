@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['chop',['chop',['../group__group-arithmetic_gaf062f67bb1c837ca5d194e7365e0dd8a.html#gaf062f67bb1c837ca5d194e7365e0dd8a',1,'boost::simd']]],
-  ['comma',['comma',['../group__group-operator_gabab79123ce981cdc82da382ba5ddd189.html#gabab79123ce981cdc82da382ba5ddd189',1,'boost::simd']]]
+  ['bitfloating',['bitfloating',['../group__group-ieee_gad64cdc34f227b09bd2c51bf6cb093ede.html#gad64cdc34f227b09bd2c51bf6cb093ede',1,'boost::simd']]],
+  ['bitget',['bitget',['../group__group-bitwise_gadb1ed926ea2b236263578fba8d6f5397.html#gadb1ed926ea2b236263578fba8d6f5397',1,'boost::simd']]],
+  ['bitincrement',['bitincrement',['../group__group-callable-constant_ga76f6a806a94b87411bfc803ca6145d23.html#ga76f6a806a94b87411bfc803ca6145d23',1,'boost::simd::functional']]],
+  ['bitinteger',['bitinteger',['../group__group-ieee_gaa8c1740e8bb91469655ca08a86c593ce.html#gaa8c1740e8bb91469655ca08a86c593ce',1,'boost::simd']]],
+  ['bitofsign',['bitofsign',['../group__group-ieee_gad72a39a32905adcc7100e7f456f47fb2.html#gad72a39a32905adcc7100e7f456f47fb2',1,'boost::simd']]],
+  ['bits',['bits',['../group__group-bitwise_ga2d373011510b55029db5a4dc4fd8f316.html#ga2d373011510b55029db5a4dc4fd8f316',1,'boost::simd']]],
+  ['bitset',['bitset',['../group__group-bitwise_ga73757ddad24fa087020aa1b00f8fc27e.html#ga73757ddad24fa087020aa1b00f8fc27e',1,'boost::simd']]],
+  ['bitwise_5fand',['bitwise_and',['../group__group-bitwise_ga0398b92b4017f77e3192f4c94b6417b9.html#ga0398b92b4017f77e3192f4c94b6417b9',1,'boost::simd::bitwise_and()'],['../group__group-bitwise_ga707b2faad0fef93f13d1723133314b08.html#ga707b2faad0fef93f13d1723133314b08',1,'boost::boost::simd::bitwise_and()']]],
+  ['bitwise_5fandnot',['bitwise_andnot',['../group__group-bitwise_gae424bb8e8f3f9daa70b620cb5afffd78.html#gae424bb8e8f3f9daa70b620cb5afffd78',1,'boost::simd']]],
+  ['bitwise_5fcast',['bitwise_cast',['../group__group-bitwise_gaaa4ef3928bdaf3d5f9dad3b9cc30f7b1.html#gaaa4ef3928bdaf3d5f9dad3b9cc30f7b1',1,'boost::simd::bitwise_cast()'],['../group__group-bitwise_ga947967ec5ae85a86f87b5125e5f93e0a.html#ga947967ec5ae85a86f87b5125e5f93e0a',1,'boost::boost::simd::bitwise_cast()']]],
+  ['bitwise_5fnot',['bitwise_not',['../group__group-operator_ga1ac0a0c5c43169b3d6c8065fd177eac0.html#ga1ac0a0c5c43169b3d6c8065fd177eac0',1,'boost::simd']]],
+  ['bitwise_5fnotand',['bitwise_notand',['../group__group-bitwise_ga385d8ab331dcb9c8eca728cedd9295f3.html#ga385d8ab331dcb9c8eca728cedd9295f3',1,'boost::simd']]],
+  ['bitwise_5fnotor',['bitwise_notor',['../group__group-bitwise_ga903eebdc97e425a3c70927f66fcb1465.html#ga903eebdc97e425a3c70927f66fcb1465',1,'boost::simd']]],
+  ['bitwise_5for',['bitwise_or',['../group__group-bitwise_ga4520841197073e4566fb2a9c6b78360d.html#ga4520841197073e4566fb2a9c6b78360d',1,'boost::simd']]],
+  ['bitwise_5fornot',['bitwise_ornot',['../group__group-bitwise_ga1773a3721d7692f8c897353afcc01c69.html#ga1773a3721d7692f8c897353afcc01c69',1,'boost::simd']]],
+  ['bitwise_5fselect',['bitwise_select',['../group__group-bitwise_gad405b85f49829cd4e9324175e5d9ca42.html#gad405b85f49829cd4e9324175e5d9ca42',1,'boost::simd']]],
+  ['bitwise_5fxor',['bitwise_xor',['../group__group-bitwise_gacf561dd7b9d834b749bfda86bd877b1b.html#gacf561dd7b9d834b749bfda86bd877b1b',1,'boost::simd']]]
 ];

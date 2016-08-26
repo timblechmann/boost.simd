@@ -1,10 +1,10 @@
 var group__group_euler =
 [
-    [ "erf", "group__group-euler_gaf50efcb02d8617461ad523b85448ab2a.html#gaf50efcb02d8617461ad523b85448ab2a", null ],
-    [ "erfc", "group__group-euler_ga71a9b9ce754eb850e3e87472c941153f.html#ga71a9b9ce754eb850e3e87472c941153f", null ],
-    [ "erfcx", "group__group-euler_gab2dcf17ff9efc60341c7439adcc87f5d.html#gab2dcf17ff9efc60341c7439adcc87f5d", null ],
-    [ "gamma", "group__group-euler_gac5b4d3bb5f45e9e333fb41c183002080.html#gac5b4d3bb5f45e9e333fb41c183002080", null ],
-    [ "gammaln", "group__group-euler_ga00805d143da6a508370a16c67f33c26a.html#ga00805d143da6a508370a16c67f33c26a", null ],
-    [ "signgam", "group__group-euler_ga3e3af6bf20744e104d354ec11ff270ca.html#ga3e3af6bf20744e104d354ec11ff270ca", null ],
-    [ "stirling", "group__group-euler_ga458ca3ed0462a0d0f8c089eeaba5c4c8.html#ga458ca3ed0462a0d0f8c089eeaba5c4c8", null ]
+    [ "erf", "group__group-euler_ga1dab2a520e22f336ba7d523c6c70acea.html#ga1dab2a520e22f336ba7d523c6c70acea", null ],
+    [ "erfc", "group__group-euler_ga42d463d32f064b8ed6966604b19446e7.html#ga42d463d32f064b8ed6966604b19446e7", null ],
+    [ "erfcx", "group__group-euler_ga0fc5588a73fde4cc4f8c2679b56e6d7b.html#ga0fc5588a73fde4cc4f8c2679b56e6d7b", null ],
+    [ "gamma", "group__group-euler_gad47714e1559a6527c0ba9f63ae0da3dd.html#gad47714e1559a6527c0ba9f63ae0da3dd", null ],
+    [ "gammaln", "group__group-euler_ga0a2e09742b47bd1acbe1e93a823d90e1.html#ga0a2e09742b47bd1acbe1e93a823d90e1", null ],
+    [ "signgam", "group__group-euler_ga703ae4cf4f783b23ae5b1bffe08430cf.html#ga703ae4cf4f783b23ae5b1bffe08430cf", null ],
+    [ "stirling", "group__group-euler_gaccce07794e62f8f8266902df63211829.html#gaccce07794e62f8f8266902df63211829", null ]
 ];

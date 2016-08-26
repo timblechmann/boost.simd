@@ -1,19 +1,10 @@
 var searchData=
 [
   ['dec_2ehpp',['dec.hpp',['../dec_8hpp.html',1,'']]],
-  ['dec_2ehpp',['dec.hpp',['../definition_2dec_8hpp.html',1,'']]],
-  ['dec_2ehpp',['dec.hpp',['../simd_2dec_8hpp.html',1,'']]],
-  ['decorator_2ehpp',['decorator.hpp',['../decorator_8hpp.html',1,'']]],
   ['deginrad_2ehpp',['deginrad.hpp',['../deginrad_8hpp.html',1,'']]],
-  ['deginrad_2ehpp',['deginrad.hpp',['../definition_2deginrad_8hpp.html',1,'']]],
   ['deinterleave_5ffirst_2ehpp',['deinterleave_first.hpp',['../deinterleave__first_8hpp.html',1,'']]],
-  ['deinterleave_5ffirst_2ehpp',['deinterleave_first.hpp',['../definition_2deinterleave__first_8hpp.html',1,'']]],
-  ['dist_2ehpp',['dist.hpp',['../definition_2dist_8hpp.html',1,'']]],
   ['dist_2ehpp',['dist.hpp',['../dist_8hpp.html',1,'']]],
-  ['div_2ehpp',['div.hpp',['../definition_2div_8hpp.html',1,'']]],
   ['div_2ehpp',['div.hpp',['../div_8hpp.html',1,'']]],
-  ['divides_2ehpp',['divides.hpp',['../definition_2divides_8hpp.html',1,'']]],
   ['divides_2ehpp',['divides.hpp',['../divides_8hpp.html',1,'']]],
-  ['dot_2ehpp',['dot.hpp',['../dot_8hpp.html',1,'']]],
-  ['dot_2ehpp',['dot.hpp',['../definition_2dot_8hpp.html',1,'']]]
+  ['dot_2ehpp',['dot.hpp',['../dot_8hpp.html',1,'']]]
 ];

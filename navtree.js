@@ -1,3 +1,56 @@
+var NAVTREE =
+[
+  [ "Boost.SIMD", "index.html", [
+    [ "Main Page", "index.html", [
+      [ "Preface", "index.html#main-preface", null ],
+      [ "Supported Compilers and Hardware", "index.html#main-support", null ],
+      [ "How to use this documentation", "index.html#main-howto", null ]
+    ] ],
+    [ "Reference documentation", "modules.html", "modules" ],
+    [ "Indexes", "usergroup0.html", [
+      [ "Methods", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerator", "functions_eval.html", null ]
+      ] ],
+      [ "Concepts and data types", "annotated.html", "annotated" ],
+      [ "Files", "files.html", "files" ]
+    ] ],
+    [ "Motivation", "motivation.html", [
+      [ "Objectives", "motivation.html#motivation-objectives", null ],
+      [ "Writing a SIMD kernel", "motivation.html#motivation-kernel", null ],
+      [ "Processing data", "motivation.html#motivation-process", null ],
+      [ "About auto-vectorization", "motivation.html#motivation-autovec", null ]
+    ] ],
+    [ "Tutorials", "tutorials.html", [
+      [ "Objectives", "tutorials.html#tutorial-objectives", null ],
+      [ "A Simple SIMD Kernel", "tutorials.html#tutorial-kernel", null ],
+      [ "Reductions", "tutorials.html#tutorial-reduction", null ],
+      [ "Branching and Selection", "tutorials.html#tutorial-ifelse", null ],
+      [ "Data Processing", "tutorials.html#tutorial-process", null ],
+      [ "Memory Access", "tutorials.html#tutorial-shuffle", null ],
+      [ "Runtime Extensions Selection", "tutorials.html#tutorial-select", null ]
+    ] ]
+  ] ]
+];
+
+var NAVTREEINDEX =
+[
+".html",
+"conj_8hpp.html",
+"group__group-arithmetic_ga1e26423aa41c56c683fa5c45b330ec19.html#ga1e26423aa41c56c683fa5c45b330ec19",
+"group__group-callable-constant_gad4f81adb71979fc41d4d25f800cb7b43.html#gad4f81adb71979fc41d4d25f800cb7b43",
+"group__group-exponential_ga28cd82c2126be296efe73039cc70c147.html#ga28cd82c2126be296efe73039cc70c147",
+"half_8hpp.html#ga43815274111f1431bd38208c745a5a59",
+"log__2_8hpp.html#ga4f03021a6f46e34fa5b6bb3a94650a92",
+"oneosqrteps_8hpp.html#ga2305c1b51fe70f754d548d320d44d04f",
+"smallestposval_8hpp.html",
+"tutorials.html"
+];
+
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
 var navTreeSubIndices = new Array();
 
 function getData(varName)
@@ -105,7 +158,7 @@ function createIndent(o,domNode,node,level)
     node.expandToggle.onclick = function() {
       if (node.expanded) {
         $(node.getChildrenUL()).slideUp("fast");
-        node.plus_img.src = node.relpath+"arrowright.png";
+        node.plus_img.src = node.relpath+"ftv2pnode.png";
         node.expanded = false;
       } else {
         expandNode(o, node, false, false);
@@ -113,7 +166,7 @@ function createIndent(o,domNode,node,level)
     }
     node.expandToggle.appendChild(imgNode);
     domNode.appendChild(node.expandToggle);
-    imgNode.src = node.relpath+"arrowright.png";
+    imgNode.src = node.relpath+"ftv2pnode.png";
   } else {
     var span = document.createElement("span");
     span.style.display = 'inline-block';
@@ -269,9 +322,9 @@ function expandNode(o, node, imm, showRoot)
         $(node.getChildrenUL()).slideDown("fast");
       }
       if (node.isLast) {
-        node.plus_img.src = node.relpath+"arrowdown.png";
+        node.plus_img.src = node.relpath+"ftv2mlastnode.png";
       } else {
-        node.plus_img.src = node.relpath+"arrowdown.png";
+        node.plus_img.src = node.relpath+"ftv2mnode.png";
       }
       node.expanded = true;
     }
@@ -341,7 +394,11 @@ function showNode(o, node, index, hash)
         getNode(o, node);
       }
       $(node.getChildrenUL()).css({'display':'block'});
-      node.plus_img.src = node.relpath+"arrowdown.png";
+      if (node.isLast) {
+        node.plus_img.src = node.relpath+"ftv2mlastnode.png";
+      } else {
+        node.plus_img.src = node.relpath+"ftv2mnode.png";
+      }
       node.expanded = true;
       var n = node.children[o.breadcrumbs[index]];
       if (index+1<o.breadcrumbs.length) {
@@ -479,7 +536,7 @@ function initNavTree(toroot,relpath)
   o.node.expanded = false;
   o.node.isLast = true;
   o.node.plus_img = document.createElement("img");
-  o.node.plus_img.src = relpath+"arrowright.png";
+  o.node.plus_img.src = relpath+"ftv2pnode.png";
   o.node.plus_img.width = 16;
   o.node.plus_img.height = 22;
 

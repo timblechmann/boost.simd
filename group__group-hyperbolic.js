@@ -1,17 +1,17 @@
 var group__group_hyperbolic =
 [
-    [ "acosh", "group__group-hyperbolic_ga399c6f9e8c0c8ee05c7da0ad54ed94cb.html#ga399c6f9e8c0c8ee05c7da0ad54ed94cb", null ],
-    [ "acoth", "group__group-hyperbolic_gad6f4629fa569d04d92741881439e1861.html#gad6f4629fa569d04d92741881439e1861", null ],
-    [ "acsch", "group__group-hyperbolic_ga8ee49ba424dc7fbeb100b36e1bdd843c.html#ga8ee49ba424dc7fbeb100b36e1bdd843c", null ],
-    [ "asech", "group__group-hyperbolic_ga46318b52f8fd2f0e440cee6c9f8ef917.html#ga46318b52f8fd2f0e440cee6c9f8ef917", null ],
-    [ "asinh", "group__group-hyperbolic_ga4580555a58d5a1bd0c3f0067d0a88989.html#ga4580555a58d5a1bd0c3f0067d0a88989", null ],
-    [ "atanh", "group__group-hyperbolic_gafc36681a93a025c0cddf6feb4b63ab50.html#gafc36681a93a025c0cddf6feb4b63ab50", null ],
-    [ "cosh", "group__group-hyperbolic_gad234e8bf25d873ec2c71cdaa07572c68.html#gad234e8bf25d873ec2c71cdaa07572c68", null ],
-    [ "coth", "group__group-hyperbolic_ga242d1519c20a25b9f8c0933a385a0ab2.html#ga242d1519c20a25b9f8c0933a385a0ab2", null ],
-    [ "csch", "group__group-hyperbolic_ga1c209de8bda0a4b2dfe511c5979002cd.html#ga1c209de8bda0a4b2dfe511c5979002cd", null ],
-    [ "sech", "group__group-hyperbolic_gadf13ecaa7a6b9119896d82e7fbf2a84e.html#gadf13ecaa7a6b9119896d82e7fbf2a84e", null ],
-    [ "sinh", "group__group-hyperbolic_ga1bd2ece96498d56efaf2870e8d2f195d.html#ga1bd2ece96498d56efaf2870e8d2f195d", null ],
-    [ "sinhc", "group__group-hyperbolic_ga25245059f149dd4c24791369bb936505.html#ga25245059f149dd4c24791369bb936505", null ],
-    [ "sinhcosh", "group__group-hyperbolic_ga37ce7c7a316424c341f66f7f66d668d5.html#ga37ce7c7a316424c341f66f7f66d668d5", null ],
-    [ "tanh", "group__group-hyperbolic_ga3499c890bb698572ced041e93d12022a.html#ga3499c890bb698572ced041e93d12022a", null ]
+    [ "acosh", "group__group-hyperbolic_ga1330b62c267712d1b107f3da29f1ca4b.html#ga1330b62c267712d1b107f3da29f1ca4b", null ],
+    [ "acoth", "group__group-hyperbolic_gae67894349b849fbb8cb85c126abec55e.html#gae67894349b849fbb8cb85c126abec55e", null ],
+    [ "acsch", "group__group-hyperbolic_ga085a35c984397b0f34a0e37d76364da3.html#ga085a35c984397b0f34a0e37d76364da3", null ],
+    [ "asech", "group__group-hyperbolic_ga6b1a88afd196f4b8c1aab5ae275c68a4.html#ga6b1a88afd196f4b8c1aab5ae275c68a4", null ],
+    [ "asinh", "group__group-hyperbolic_gae357930089308c0cae3a9af1a158e249.html#gae357930089308c0cae3a9af1a158e249", null ],
+    [ "atanh", "group__group-hyperbolic_ga3918b6ddba68f1a5654397271899be32.html#ga3918b6ddba68f1a5654397271899be32", null ],
+    [ "cosh", "group__group-hyperbolic_ga54c291b9ce3e606fb885119c543915b6.html#ga54c291b9ce3e606fb885119c543915b6", null ],
+    [ "coth", "group__group-hyperbolic_ga5d5c9ab89aa69010132449210f754a28.html#ga5d5c9ab89aa69010132449210f754a28", null ],
+    [ "csch", "group__group-hyperbolic_ga3add71c59741d415e6bf7b3a194172a0.html#ga3add71c59741d415e6bf7b3a194172a0", null ],
+    [ "sech", "group__group-hyperbolic_gaa7fed53580b212f87450c03de1c8dc05.html#gaa7fed53580b212f87450c03de1c8dc05", null ],
+    [ "sinh", "group__group-hyperbolic_ga0ba36458b04233429b91adaad9f77165.html#ga0ba36458b04233429b91adaad9f77165", null ],
+    [ "sinhc", "group__group-hyperbolic_ga81e4852593d2b4b02a963c192e24b887.html#ga81e4852593d2b4b02a963c192e24b887", null ],
+    [ "sinhcosh", "group__group-hyperbolic_ga2c1b035309638a677e8ae74850fe8f7c.html#ga2c1b035309638a677e8ae74850fe8f7c", null ],
+    [ "tanh", "group__group-hyperbolic_ga53eb1a4380d0c0772211f74b6ef63ce2.html#ga53eb1a4380d0c0772211f74b6ef63ce2", null ]
 ];

@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['unspecified_5f',['unspecified_',['../classunspecified__.html',1,'']]]
+  ['scalar_5f',['scalar_',['../structboost_1_1boost_1_1dispatch_1_1scalar__.html',1,'boost::boost::dispatch']]],
+  ['scalar_5fof',['scalar_of',['../structboost_1_1boost_1_1dispatch_1_1ext_1_1scalar__of.html',1,'boost::boost::dispatch::ext']]],
+  ['scalar_5fof',['scalar_of',['../structboost_1_1boost_1_1dispatch_1_1scalar__of.html',1,'boost::boost::dispatch']]],
+  ['scalar_5fof_3c_20s_3a_3avalue_5ftype_20_3e',['scalar_of&lt; S::value_type &gt;',['../structboost_1_1boost_1_1dispatch_1_1scalar__of.html',1,'boost::boost::dispatch::scalar_of&lt; S::value_type &gt;'],['../structboost_1_1boost_1_1dispatch_1_1ext_1_1scalar__of.html',1,'boost::boost::dispatch::ext::scalar_of&lt; S::value_type &gt;']]],
+  ['scalar_5fstorage',['scalar_storage',['../structboost_1_1boost_1_1simd_1_1scalar__storage.html',1,'boost::boost::simd']]],
+  ['sign_5fof',['sign_of',['../structboost_1_1boost_1_1dispatch_1_1sign__of.html',1,'boost::boost::dispatch']]],
+  ['signed_5fintegral_5f',['signed_integral_',['../structboost_1_1boost_1_1dispatch_1_1signed__integral__.html',1,'boost::boost::dispatch']]],
+  ['signed_5ftype_5f',['signed_type_',['../structboost_1_1boost_1_1dispatch_1_1signed__type__.html',1,'boost::boost::dispatch']]],
+  ['signed_5ftype_5f_3c_20t_2c_20signed_20_3e',['signed_type_&lt; T, signed &gt;',['../structboost_1_1boost_1_1dispatch_1_1signed__type___3_01T_00_01signed_01_4.html',1,'boost::boost::dispatch']]],
+  ['signed_5ftype_5f_3c_20t_2c_20unsigned_20_3e',['signed_type_&lt; T, unsigned &gt;',['../structboost_1_1boost_1_1dispatch_1_1signed__type___3_01T_00_01unsigned_01_4.html',1,'boost::boost::dispatch']]],
+  ['simd_5f',['simd_',['../structboost_1_1boost_1_1simd_1_1simd__.html',1,'boost::boost::simd']]],
+  ['simd_5femulation_5f',['simd_emulation_',['../structboost_1_1boost_1_1simd_1_1simd__emulation__.html',1,'boost::boost::simd']]],
+  ['single_5f',['single_',['../structboost_1_1boost_1_1dispatch_1_1single__.html',1,'boost::boost::dispatch']]],
+  ['sized_5ftype_5f',['sized_type_',['../structboost_1_1boost_1_1dispatch_1_1sized__type__.html',1,'boost::boost::dispatch']]],
+  ['sized_5ftype_5f_3c_20t_2c_20size_20_3e',['sized_type_&lt; T, Size &gt;',['../structboost_1_1boost_1_1dispatch_1_1sized__type__.html',1,'boost::boost::dispatch']]],
+  ['smallest_5finteger',['smallest_integer',['../structboost_1_1boost_1_1simd_1_1limits_1_1smallest__integer.html',1,'boost::boost::simd::limits']]],
+  ['sse1_5f',['sse1_',['../structboost_1_1boost_1_1simd_1_1sse1__.html',1,'boost::boost::simd']]],
+  ['sse2_5f',['sse2_',['../structboost_1_1boost_1_1simd_1_1sse2__.html',1,'boost::boost::simd']]],
+  ['sse3_5f',['sse3_',['../structboost_1_1boost_1_1simd_1_1sse3__.html',1,'boost::boost::simd']]],
+  ['sse4_5f1_5f',['sse4_1_',['../structboost_1_1boost_1_1simd_1_1sse4__1__.html',1,'boost::boost::simd']]],
+  ['sse4_5f2_5f',['sse4_2_',['../structboost_1_1boost_1_1simd_1_1sse4__2__.html',1,'boost::boost::simd']]],
+  ['sse4a_5f',['sse4a_',['../structboost_1_1boost_1_1simd_1_1sse4a__.html',1,'boost::boost::simd']]],
+  ['sse_5f',['sse_',['../structboost_1_1boost_1_1simd_1_1sse__.html',1,'boost::boost::simd']]],
+  ['ssse3_5f',['ssse3_',['../structboost_1_1boost_1_1simd_1_1ssse3__.html',1,'boost::boost::simd']]]
 ];

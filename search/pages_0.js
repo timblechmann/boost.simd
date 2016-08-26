@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['a_20simple_20simd_20kernel',['A Simple SIMD Kernel',['../tutorial-hello.html',1,'']]]
+  ['main_20page',['Main Page',['../index.html',1,'']]],
+  ['motivation',['Motivation',['../motivation.html',1,'']]]
 ];

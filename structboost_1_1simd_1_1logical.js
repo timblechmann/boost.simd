@@ -1,7 +1,8 @@
 var structboost_1_1simd_1_1logical =
 [
-    [ "operator~", "structboost_1_1simd_1_1logical.html#a81e89ed24236889dd523e96100a65fa9", null ],
-    [ "operator!", "structboost_1_1simd_1_1logical.html#afc02f010943e4d7dfd531ff88e9f4ce8", null ],
+    [ "operator~", "structboost_1_1simd_1_1logical.html#ac0bc89727c576efe000a94df02c7cffd", null ],
+    [ "operator!", "structboost_1_1simd_1_1logical.html#abc88d2bf0ec99fd754cf46daaf4f4264", null ],
+    [ "operator+", "structboost_1_1simd_1_1logical.html#afe95cab24e0baf08dc69a8aad2c49644", null ],
     [ "operator bool", "structboost_1_1simd_1_1logical.html#a8fbff3167633948e52c9346b2e26b2f2", null ],
     [ "value", "structboost_1_1simd_1_1logical.html#a5d12a5a18db57c9adcaaf2916c27270f", null ],
     [ "logical", "structboost_1_1simd_1_1logical.html#ae86f4f0e4b7876e150c3849ecd1c949c", null ],

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['trigonometric_20functions',['Trigonometric functions',['../group__group-trigonometric.html',1,'']]],
-  ['types_20and_20helpers',['Types and helpers',['../group__group-types.html',1,'']]]
+  ['user_20api',['User API',['../group__group-api.html',1,'']]]
 ];

@@ -1,20 +1,12 @@
 var searchData=
 [
-  ['half_2ehpp',['half.hpp',['../definition_2half_8hpp.html',1,'']]],
   ['half_2ehpp',['half.hpp',['../half_8hpp.html',1,'']]],
   ['halfeps_2ehpp',['halfeps.hpp',['../halfeps_8hpp.html',1,'']]],
-  ['halfeps_2ehpp',['halfeps.hpp',['../definition_2halfeps_8hpp.html',1,'']]],
-  ['has_5fnative_5fimplementation_2ehpp',['has_native_implementation.hpp',['../has__native__implementation_8hpp.html',1,'']]],
   ['hi_2ehpp',['hi.hpp',['../hi_8hpp.html',1,'']]],
-  ['hi_2ehpp',['hi.hpp',['../simd_2hi_8hpp.html',1,'']]],
-  ['hi_2ehpp',['hi.hpp',['../definition_2hi_8hpp.html',1,'']]],
-  ['hmsb_2ehpp',['hmsb.hpp',['../definition_2hmsb_8hpp.html',1,'']]],
   ['hmsb_2ehpp',['hmsb.hpp',['../hmsb_8hpp.html',1,'']]],
   ['horn_2ehpp',['horn.hpp',['../horn_8hpp.html',1,'']]],
   ['horn1_2ehpp',['horn1.hpp',['../horn1_8hpp.html',1,'']]],
-  ['hundred_2ehpp',['hundred.hpp',['../definition_2hundred_8hpp.html',1,'']]],
   ['hundred_2ehpp',['hundred.hpp',['../hundred_8hpp.html',1,'']]],
   ['hyperbolic_2ehpp',['hyperbolic.hpp',['../hyperbolic_8hpp.html',1,'']]],
-  ['hypot_2ehpp',['hypot.hpp',['../definition_2hypot_8hpp.html',1,'']]],
   ['hypot_2ehpp',['hypot.hpp',['../hypot_8hpp.html',1,'']]]
 ];
