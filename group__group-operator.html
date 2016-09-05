@@ -29,7 +29,7 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="doxy-boot.js"></script>
+<script type="text/javascript" src="numscale.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -56,6 +56,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Home</span></a></li>
       <li><a href="QuickStart.html"><span>Quick&#160;Start</span></a></li>
       <li><a href="tutorials.html"><span>Tutorials</span></a></li>
+      <li><a href="faq.html"><span>FAQ</span></a></li>
       <li class="current"><a href="modules.html"><span>Reference&#160;documentation</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -92,8 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Operators<div class="ingroups"><a class="el" href="group__group-api.html">User API</a> &raquo; <a class="el" href="group__group-functions.html">Functions and Constants</a></div></div>  </div>
 </div><!--header-->
@@ -101,6 +101,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="details" id="details"></a><h2 class="groupheader">Description</h2>
 <p>These functions provides scalar and SIMD version of the native C and C++ operators. </p>
 <p>Operators are provided in infix and prefix notations, except for scalar floating types as C++ does not allow overloading of operators for these types. Operators &amp;, |, ~, % and the ternary operator ?: are also not defined for floating types in C++. In these seldomly used cases, prefix bitwise_and, bitwise_or, complement and if_else are required.</p>
+<table  align="center" width="90%" class="table-striped ">
+<tr>
+<th><dl class="section warning">
+<dt>Warning</dt>
+<dd>Note that &amp;&amp; and || overloaded on simd packs do not make short circuitry</dd>
+</dl>
+</th></tr>
+</table>
 <p>Here is the list of of operators and their infix associated notation. These remarks are only valid if the prefix notation is used and at least one parameter is a pack: otherwise infix operators on scalars are regulated by usual C++ langage rules.</p>
 <center> <table class="doxtable">
 <tr>
@@ -114,11 +122,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr>
 <td><a class="el" href="group__group-operator_ga47ac7081c015b5f51b9aa46c17b6b73a.html#ga47ac7081c015b5f51b9aa46c17b6b73a">complement</a> </td><td>~ </td><td>1 </td><td>T1 </td><td></td></tr>
 <tr>
-<td><a class="el" href="group__group-operator_ga87d6929ebab9ae9ffba5bfc1ddc19458.html#ga87d6929ebab9ae9ffba5bfc1ddc19458">divides</a>, div </td><td>/ </td><td>2 </td><td>T1, T1 </td><td>arithmetic types (2) </td></tr>
+<td><a class="el" href="group__group-operator_gaffcdabc266680683bf5d0b879908d1f1.html#gaffcdabc266680683bf5d0b879908d1f1">divides</a> </td><td>/ </td><td>2 </td><td>T1, T1 </td><td>arithmetic types (2) </td></tr>
+<tr>
+<td><a class="el" href="namespaceboost_1_1simd_a60305a9b3734d8d6a8609bf5ac65d00c.html#a60305a9b3734d8d6a8609bf5ac65d00c">div</a> </td><td>/ </td><td>2 </td><td>T1, T1 </td><td>arithmetic types (2) </td></tr>
 <tr>
 <td><a class="el" href="group__group-boolean_ga22c4d2abca1cc42b33e0dbddd1808f41.html#ga22c4d2abca1cc42b33e0dbddd1808f41">if_else</a> </td><td>NA </td><td>3 </td><td>T1, T2, T2 </td><td></td></tr>
 <tr>
-<td><a class="el" href="group__group-predicates_ga95f3e40d987f8424f31a93c7487ff3d0.html#ga95f3e40d987f8424f31a93c7487ff3d0">is_equal</a> </td><td>== </td><td>2 </td><td>T1, T1 </td><td></td></tr>
+<td><a class="el" href="group__group-operator_ga2cb74619be58c84d5051482af10c0983.html#ga2cb74619be58c84d5051482af10c0983">is_equal</a> </td><td>== </td><td>2 </td><td>T1, T1 </td><td></td></tr>
 <tr>
 <td><a class="el" href="group__group-predicates_ga9b86dc30c2857dbd6b523bdb712124f2.html#ga9b86dc30c2857dbd6b523bdb712124f2">is_greater</a> </td><td>&gt; </td><td>2 </td><td>T1, T1 </td><td></td></tr>
 <tr>
@@ -130,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr>
 <td><a class="el" href="group__group-predicates_gaa1f5d82ec3ed77c8746eeb91a7b34c28.html#gaa1f5d82ec3ed77c8746eeb91a7b34c28">is_not_equal</a> </td><td>!= </td><td>2 </td><td>T1, T1 </td><td></td></tr>
 <tr>
-<td><a class="el" href="group__group-boolean_ga51e815b6345146779876b21e9b101199.html#ga51e815b6345146779876b21e9b101199">logical_and</a> </td><td>&amp;&amp; </td><td>2 </td><td>T1, T1 </td><td>returns a <a class="el" href="structboost_1_1simd_1_1logical.html">logical</a> </td></tr>
+<td><a class="el" href="group__group-boolean_ga25c5318bdebe6a489ca877f8b6b93b51.html#ga25c5318bdebe6a489ca877f8b6b93b51">logical_and</a> </td><td>&amp;&amp; </td><td>2 </td><td>T1, T1 </td><td>returns a <a class="el" href="structboost_1_1simd_1_1logical.html">logical</a> </td></tr>
 <tr>
 <td><a class="el" href="group__group-boolean_ga0180004205eb6f398e022d136ef89ebf.html#ga0180004205eb6f398e022d136ef89ebf">logical_not</a> </td><td>! </td><td>1 </td><td>T1, T1 </td><td>returns a <a class="el" href="structboost_1_1simd_1_1logical.html">logical</a> </td></tr>
 <tr>
@@ -138,17 +148,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr>
 <td><a class="el" href="group__group-operator_ga8e6fc913926204112090899ededb7127.html#ga8e6fc913926204112090899ededb7127">minus</a> </td><td>- </td><td>2 </td><td>T1, T1 </td><td>arithmetic types (2) </td></tr>
 <tr>
-<td><a class="el" href="group__group-arithmetic_ga77a6f4066a63c0eb1a0058c8c53dc761.html#ga77a6f4066a63c0eb1a0058c8c53dc761">rem</a> </td><td>% </td><td>2 </td><td>T1, T2 </td><td>T2 is integral scalar or associated to T1 (3) </td></tr>
+<td><a class="el" href="namespaceboost_1_1simd_a77a6f4066a63c0eb1a0058c8c53dc761.html#a77a6f4066a63c0eb1a0058c8c53dc761">rem</a> </td><td>% </td><td>2 </td><td>T1, T2 </td><td>T2 is integral scalar or associated to T1 (3) </td></tr>
 <tr>
 <td><a class="el" href="group__group-operator_gad3c70023fde6f8197adff17686a13397.html#gad3c70023fde6f8197adff17686a13397">multiplies</a> </td><td>* </td><td>2 </td><td>T1, T1 </td><td>arithmetic types (2) </td></tr>
 <tr>
 <td><a class="el" href="group__group-operator_gab7d2f36a67787bac4c1b2cfd05ba2b47.html#gab7d2f36a67787bac4c1b2cfd05ba2b47">plus</a> </td><td>+ </td><td>2 </td><td>T1, T1 </td><td>arithmetic types (2) </td></tr>
 <tr>
-<td><a class="el" href="group__group-operator_ga292767a2258d898b530bea80f37b8720.html#ga292767a2258d898b530bea80f37b8720">shift_left</a>, shl </td><td>&lt;&lt; </td><td>2 </td><td>T1, T2 </td><td>T2 is integral scalar or associated to T1 (3) </td></tr>
+<td><a class="el" href="group__group-operator_ga66362e132a221d745cb9eb00155b0bf9.html#ga66362e132a221d745cb9eb00155b0bf9">shift_left</a> </td><td>&lt;&lt; </td><td>2 </td><td>T1, T2 </td><td>T2 is integral scalar or associated to T1 (3) </td></tr>
 <tr>
-<td><a class="el" href="group__group-operator_gafa8f864e68300fd448b549449f610331.html#gafa8f864e68300fd448b549449f610331">shift_right</a> </td><td>&gt;&gt; </td><td>2 </td><td>T1, T2 </td><td>T2 is integral scalar or associated to T1 (3) </td></tr>
+<td><a class="el" href="group__group-operator_gae52b980a4e49ef863836676b42fb8dc8.html#gae52b980a4e49ef863836676b42fb8dc8">shift_right</a> </td><td>&gt;&gt; </td><td>2 </td><td>T1, T2 </td><td>T2 is integral scalar or associated to T1 (3) </td></tr>
 <tr>
-<td><a class="el" href="group__group-bitwise_gab757feefacb79adf859b93d1a7914b67.html#gab757feefacb79adf859b93d1a7914b67">shr</a> (logical shift)</td><td></td><td>2 </td><td>T1, T2 </td><td>T2 is integral scalar or associated to T1 (3) </td></tr>
+<td><a class="el" href="group__group-operator_gad99031bdf411d2085d1db26709c7ccf1.html#gad99031bdf411d2085d1db26709c7ccf1">shr</a> (logical shift)</td><td></td><td>2 </td><td>T1, T2 </td><td>T2 is integral scalar or associated to T1 (3) </td></tr>
 <tr>
 <td><a class="el" href="group__group-operator_gae310c9b9cd252cd6338eb03f770fcd18.html#gae310c9b9cd252cd6338eb03f770fcd18">unary_minus</a> </td><td>- </td><td>1 </td><td>T1 </td><td>signed arithmetic types (2) </td></tr>
 <tr>
@@ -163,16 +173,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>(3) This precisely means T2 is both scalar and of integral type or T2 is as_integer_t&lt;T1&gt;. Note that if T2 scalar is always simd hardware supported, the other case is often emulated.</li>
 </ul>
 <p>Extensions:</p>
-<p><a class="el" href="group__group-arithmetic_gaf3364d8895c8f13361ac887168514da0.html#gaf3364d8895c8f13361ac887168514da0">division</a> and <a class="el" href="group__group-arithmetic_ga77a6f4066a63c0eb1a0058c8c53dc761.html#ga77a6f4066a63c0eb1a0058c8c53dc761">remainder</a> operators have extensions to be seen following the links. </p>
+<p><a class="el" href="namespaceboost_1_1simd_a60305a9b3734d8d6a8609bf5ac65d00c.html#a60305a9b3734d8d6a8609bf5ac65d00c">division</a> and <a class="el" href="namespaceboost_1_1simd_a77a6f4066a63c0eb1a0058c8c53dc761.html#a77a6f4066a63c0eb1a0058c8c53dc761">remainder</a> operators have extensions to be seen following the links. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga26cec1951270908ead4982f1a1ffae8d"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_ga26cec1951270908ead4982f1a1ffae8d.html#ga26cec1951270908ead4982f1a1ffae8d">boost::simd::bitwise_not</a> (Value const &amp;x)</td></tr>
+<tr class="memdesc:ga26cec1951270908ead4982f1a1ffae8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing bitwise_not capabilities.  <a href="group__group-operator_ga26cec1951270908ead4982f1a1ffae8d.html#ga26cec1951270908ead4982f1a1ffae8d">More...</a><br /></td></tr>
+<tr class="separator:ga26cec1951270908ead4982f1a1ffae8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47ac7081c015b5f51b9aa46c17b6b73a"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_ga47ac7081c015b5f51b9aa46c17b6b73a.html#ga47ac7081c015b5f51b9aa46c17b6b73a">boost::simd::complement</a> (Value const &amp;v0)</td></tr>
 <tr class="memdesc:ga47ac7081c015b5f51b9aa46c17b6b73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing complement capabilities.  <a href="group__group-operator_ga47ac7081c015b5f51b9aa46c17b6b73a.html#ga47ac7081c015b5f51b9aa46c17b6b73a">More...</a><br /></td></tr>
 <tr class="separator:ga47ac7081c015b5f51b9aa46c17b6b73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga87d6929ebab9ae9ffba5bfc1ddc19458"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_ga87d6929ebab9ae9ffba5bfc1ddc19458.html#ga87d6929ebab9ae9ffba5bfc1ddc19458">boost::simd::divides</a> (Value const &amp;v0, Value const &amp;v1)</td></tr>
-<tr class="memdesc:ga87d6929ebab9ae9ffba5bfc1ddc19458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing divides capabilities.  <a href="group__group-operator_ga87d6929ebab9ae9ffba5bfc1ddc19458.html#ga87d6929ebab9ae9ffba5bfc1ddc19458">More...</a><br /></td></tr>
-<tr class="separator:ga87d6929ebab9ae9ffba5bfc1ddc19458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffcdabc266680683bf5d0b879908d1f1"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_gaffcdabc266680683bf5d0b879908d1f1.html#gaffcdabc266680683bf5d0b879908d1f1">boost::simd::divides</a> (Value const &amp;x, Value const &amp;y)</td></tr>
+<tr class="memdesc:gaffcdabc266680683bf5d0b879908d1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing divides capabilities.  <a href="group__group-operator_gaffcdabc266680683bf5d0b879908d1f1.html#gaffcdabc266680683bf5d0b879908d1f1">More...</a><br /></td></tr>
+<tr class="separator:gaffcdabc266680683bf5d0b879908d1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cb74619be58c84d5051482af10c0983"><td class="memItemLeft" align="right" valign="top">as_logical_t&lt; T0 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_ga2cb74619be58c84d5051482af10c0983.html#ga2cb74619be58c84d5051482af10c0983">boost::simd::is_equal</a> (T0 const &amp;x, T1 const &amp;y)</td></tr>
+<tr class="memdesc:ga2cb74619be58c84d5051482af10c0983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing is_equal capabilities.  <a href="group__group-operator_ga2cb74619be58c84d5051482af10c0983.html#ga2cb74619be58c84d5051482af10c0983">More...</a><br /></td></tr>
+<tr class="separator:ga2cb74619be58c84d5051482af10c0983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e6fc913926204112090899ededb7127"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_ga8e6fc913926204112090899ededb7127.html#ga8e6fc913926204112090899ededb7127">boost::simd::minus</a> (Value const &amp;x, Value const &amp;y)</td></tr>
 <tr class="memdesc:ga8e6fc913926204112090899ededb7127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing minus capabilities.  <a href="group__group-operator_ga8e6fc913926204112090899ededb7127.html#ga8e6fc913926204112090899ededb7127">More...</a><br /></td></tr>
 <tr class="separator:ga8e6fc913926204112090899ededb7127"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,27 +198,24 @@ Functions</h2></td></tr>
 <tr class="memitem:gab7d2f36a67787bac4c1b2cfd05ba2b47"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_gab7d2f36a67787bac4c1b2cfd05ba2b47.html#gab7d2f36a67787bac4c1b2cfd05ba2b47">boost::simd::plus</a> (Value const &amp;x, Value const &amp;y)</td></tr>
 <tr class="memdesc:gab7d2f36a67787bac4c1b2cfd05ba2b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing plus capabilities.  <a href="group__group-operator_gab7d2f36a67787bac4c1b2cfd05ba2b47.html#gab7d2f36a67787bac4c1b2cfd05ba2b47">More...</a><br /></td></tr>
 <tr class="separator:gab7d2f36a67787bac4c1b2cfd05ba2b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga292767a2258d898b530bea80f37b8720"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_ga292767a2258d898b530bea80f37b8720.html#ga292767a2258d898b530bea80f37b8720">boost::simd::shift_left</a> (Value const &amp;v0, IntegerValue const &amp;n)</td></tr>
-<tr class="memdesc:ga292767a2258d898b530bea80f37b8720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing shift_left capabilities.  <a href="group__group-operator_ga292767a2258d898b530bea80f37b8720.html#ga292767a2258d898b530bea80f37b8720">More...</a><br /></td></tr>
-<tr class="separator:ga292767a2258d898b530bea80f37b8720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafa8f864e68300fd448b549449f610331"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_gafa8f864e68300fd448b549449f610331.html#gafa8f864e68300fd448b549449f610331">boost::simd::shift_right</a> (Value const &amp;v0, IntegerValue const &amp;n)</td></tr>
-<tr class="memdesc:gafa8f864e68300fd448b549449f610331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing shift_right capabilities.  <a href="group__group-operator_gafa8f864e68300fd448b549449f610331.html#gafa8f864e68300fd448b549449f610331">More...</a><br /></td></tr>
-<tr class="separator:gafa8f864e68300fd448b549449f610331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66362e132a221d745cb9eb00155b0bf9"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_ga66362e132a221d745cb9eb00155b0bf9.html#ga66362e132a221d745cb9eb00155b0bf9">boost::simd::shift_left</a> (Value const &amp;x, IntegerValue const &amp;n)</td></tr>
+<tr class="memdesc:ga66362e132a221d745cb9eb00155b0bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing shift_left capabilities.  <a href="group__group-operator_ga66362e132a221d745cb9eb00155b0bf9.html#ga66362e132a221d745cb9eb00155b0bf9">More...</a><br /></td></tr>
+<tr class="separator:ga66362e132a221d745cb9eb00155b0bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae52b980a4e49ef863836676b42fb8dc8"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_gae52b980a4e49ef863836676b42fb8dc8.html#gae52b980a4e49ef863836676b42fb8dc8">boost::simd::shift_right</a> (Value const &amp;x, IntegerValue const &amp;n)</td></tr>
+<tr class="memdesc:gae52b980a4e49ef863836676b42fb8dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing shift_right capabilities.  <a href="group__group-operator_gae52b980a4e49ef863836676b42fb8dc8.html#gae52b980a4e49ef863836676b42fb8dc8">More...</a><br /></td></tr>
+<tr class="separator:gae52b980a4e49ef863836676b42fb8dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9152a28144e221b2ce23afc1746230fc"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_ga9152a28144e221b2ce23afc1746230fc.html#ga9152a28144e221b2ce23afc1746230fc">boost::simd::shl</a> (Value const &amp;v0, IntegerValue const &amp;n)</td></tr>
 <tr class="memdesc:ga9152a28144e221b2ce23afc1746230fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing shl capabilities.  <a href="group__group-operator_ga9152a28144e221b2ce23afc1746230fc.html#ga9152a28144e221b2ce23afc1746230fc">More...</a><br /></td></tr>
 <tr class="separator:ga9152a28144e221b2ce23afc1746230fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad99031bdf411d2085d1db26709c7ccf1"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_gad99031bdf411d2085d1db26709c7ccf1.html#gad99031bdf411d2085d1db26709c7ccf1">boost::simd::shr</a> (Value const &amp;x, IntegerValue const &amp;n)</td></tr>
+<tr class="memdesc:gad99031bdf411d2085d1db26709c7ccf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing shr capabilities.  <a href="group__group-operator_gad99031bdf411d2085d1db26709c7ccf1.html#gad99031bdf411d2085d1db26709c7ccf1">More...</a><br /></td></tr>
+<tr class="separator:gad99031bdf411d2085d1db26709c7ccf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae310c9b9cd252cd6338eb03f770fcd18"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_gae310c9b9cd252cd6338eb03f770fcd18.html#gae310c9b9cd252cd6338eb03f770fcd18">boost::simd::unary_minus</a> (Value const &amp;x)</td></tr>
 <tr class="memdesc:gae310c9b9cd252cd6338eb03f770fcd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing unary_minus capabilities.  <a href="group__group-operator_gae310c9b9cd252cd6338eb03f770fcd18.html#gae310c9b9cd252cd6338eb03f770fcd18">More...</a><br /></td></tr>
 <tr class="separator:gae310c9b9cd252cd6338eb03f770fcd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga314256697157ac145249dcd67ca84893"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_ga314256697157ac145249dcd67ca84893.html#ga314256697157ac145249dcd67ca84893">boost::simd::unary_plus</a> (Value const &amp;x)</td></tr>
 <tr class="memdesc:ga314256697157ac145249dcd67ca84893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing unary_plus capabilities.  <a href="group__group-operator_ga314256697157ac145249dcd67ca84893.html#ga314256697157ac145249dcd67ca84893">More...</a><br /></td></tr>
 <tr class="separator:ga314256697157ac145249dcd67ca84893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga1ac0a0c5c43169b3d6c8065fd177eac0"><td class="memItemLeft" align="right" valign="top">const boost::dispatch::functor&lt; tag::bitwise_not_ &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-operator_ga1ac0a0c5c43169b3d6c8065fd177eac0.html#ga1ac0a0c5c43169b3d6c8065fd177eac0">boost::simd::bitwise_not</a> = {}</td></tr>
-<tr class="memdesc:ga1ac0a0c5c43169b3d6c8065fd177eac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing bitwise_not capabilities.  <a href="group__group-operator_ga1ac0a0c5c43169b3d6c8065fd177eac0.html#ga1ac0a0c5c43169b3d6c8065fd177eac0">More...</a><br /></td></tr>
-<tr class="separator:ga1ac0a0c5c43169b3d6c8065fd177eac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
@@ -213,7 +226,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 26 2016 20:43:57 for Boost.SIMD by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 5 2016 22:03:38 for Boost.SIMD by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

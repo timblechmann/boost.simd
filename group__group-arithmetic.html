@@ -29,7 +29,7 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="doxy-boot.js"></script>
+<script type="text/javascript" src="numscale.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -56,6 +56,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Home</span></a></li>
       <li><a href="QuickStart.html"><span>Quick&#160;Start</span></a></li>
       <li><a href="tutorials.html"><span>Tutorials</span></a></li>
+      <li><a href="faq.html"><span>FAQ</span></a></li>
       <li class="current"><a href="modules.html"><span>Reference&#160;documentation</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -134,8 +135,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p class="startli">-The other ones return the same type as the entry.</p>
 </li>
 <li><p class="startli"><b>Division operations</b></p>
-<p class="startli"><a class="el" href="group__group-operator_ga87d6929ebab9ae9ffba5bfc1ddc19458.html#ga87d6929ebab9ae9ffba5bfc1ddc19458">divides</a> is the function associated to standard division. There is another one which provides more flexibility, namely rounded divisions.</p>
-<p class="startli">With two parameters <a class="el" href="group__group-arithmetic_gaf3364d8895c8f13361ac887168514da0.html#gaf3364d8895c8f13361ac887168514da0">div</a> and <a class="el" href="group__group-operator_ga87d6929ebab9ae9ffba5bfc1ddc19458.html#ga87d6929ebab9ae9ffba5bfc1ddc19458">divides</a> are equivalent, but <a class="el" href="group__group-arithmetic_gaf3364d8895c8f13361ac887168514da0.html#gaf3364d8895c8f13361ac887168514da0">div</a> can admit a first option parameter that modifies its behaviour.</p>
+<p class="startli"><a class="el" href="group__group-operator_gaffcdabc266680683bf5d0b879908d1f1.html#gaffcdabc266680683bf5d0b879908d1f1">divides</a> is the function associated to standard division. There is another one which provides more flexibility, namely rounded divisions.</p>
+<p class="startli">With two parameters <a class="el" href="namespaceboost_1_1simd_a60305a9b3734d8d6a8609bf5ac65d00c.html#a60305a9b3734d8d6a8609bf5ac65d00c">div</a> and <a class="el" href="group__group-operator_gaffcdabc266680683bf5d0b879908d1f1.html#gaffcdabc266680683bf5d0b879908d1f1">divides</a> are equivalent, but <a class="el" href="namespaceboost_1_1simd_a60305a9b3734d8d6a8609bf5ac65d00c.html#a60305a9b3734d8d6a8609bf5ac65d00c">div</a> can admit a first option parameter that modifies its behaviour.</p>
 <p class="startli">The option parameter is described in the following table where a and b are of type T, fT is a supposed floating type associated to T (as_floating_t&lt;T&gt; if it exists) and iT is the integer type associated to T (as_integer_t&lt;T&gt;). (fT and iT are here only to support pseudo code description)</p>
 <center> <table class="doxtable">
 <tr>
@@ -163,7 +164,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table>
 </center></li>
 <li><p class="startli"><b>Remainder operations</b></p>
-<p class="startli"><a class="el" href="group__group-arithmetic_ga77a6f4066a63c0eb1a0058c8c53dc761.html#ga77a6f4066a63c0eb1a0058c8c53dc761">rem</a> is the remander functor providing same kind of facilities as <a class="el" href="group__group-arithmetic_gaf3364d8895c8f13361ac887168514da0.html#gaf3364d8895c8f13361ac887168514da0">div</a></p>
+<p class="startli"><a class="el" href="namespaceboost_1_1simd_a77a6f4066a63c0eb1a0058c8c53dc761.html#a77a6f4066a63c0eb1a0058c8c53dc761">rem</a> is the remander functor providing same kind of facilities as <a class="el" href="namespaceboost_1_1simd_a60305a9b3734d8d6a8609bf5ac65d00c.html#a60305a9b3734d8d6a8609bf5ac65d00c">div</a></p>
 <p class="startli">With two parameters rem(a, b) is equivalent to rem(fix, a, b), but rem can admit a first optional parameter that modifies its behaviour and moreover can use the fast_ decorator if limiting case values are not a problem.</p>
 <p class="startli">The option parameter can be chosen between <a class="el" href="group__group-arithmetic_ga3ef45f2082d6ec119f328c5b9db12ea2.html#ga3ef45f2082d6ec119f328c5b9db12ea2">ceil</a>, <a class="el" href="group__group-arithmetic_ga1a069d5432ab8e76f487d16cc2683cd3.html#ga1a069d5432ab8e76f487d16cc2683cd3">floor</a>, <a class="el" href="group__group-arithmetic_gaf9cb2ef2f02884d7d21a8be52e40f31e.html#gaf9cb2ef2f02884d7d21a8be52e40f31e">fix</a>, <a class="el" href="group__group-arithmetic_ga19df49281823cbb3b3fde169208ed4f3.html#ga19df49281823cbb3b3fde169208ed4f3">round</a>, <a class="el" href="group__group-arithmetic_ga9a05bfab85897341eda22c8d0783942a.html#ga9a05bfab85897341eda22c8d0783942a">nearbyint</a> and if opt is the option, the call:</p>
 <p class="startli">rem(opt, a, b) is equivalent to a-b*div(opt, a, b)</p>
@@ -213,7 +214,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr>
 <td align="center"><a class="el" href="group__group-arithmetic_ga1a069d5432ab8e76f487d16cc2683cd3.html#ga1a069d5432ab8e76f487d16cc2683cd3">floor</a> </td><td align="center"><a class="el" href="group__group-arithmetic_gab4829e4f7fcdc71f309f5ec322d0af50.html#gab4829e4f7fcdc71f309f5ec322d0af50">min</a> </td><td align="center"><a class="el" href="group__group-arithmetic_gaa93f3539600ed7a9f496b95bb48c47db.html#gaa93f3539600ed7a9f496b95bb48c47db">signbit</a> </td></tr>
 <tr>
-<td align="center"><a class="el" href="group__group-arithmetic_ga061fdacba290f4f6d1d7bb59cec69628.html#ga061fdacba290f4f6d1d7bb59cec69628">fma</a> </td><td align="center"><a class="el" href="group__group-arithmetic_ga77a6f4066a63c0eb1a0058c8c53dc761.html#ga77a6f4066a63c0eb1a0058c8c53dc761">rem</a> (%) </td><td align="center"><a class="el" href="group__group-arithmetic_ga5317bede3e8e600a8d251111840ff8e2.html#ga5317bede3e8e600a8d251111840ff8e2">sqrt</a> </td></tr>
+<td align="center"><a class="el" href="group__group-arithmetic_ga061fdacba290f4f6d1d7bb59cec69628.html#ga061fdacba290f4f6d1d7bb59cec69628">fma</a> </td><td align="center"><a class="el" href="namespaceboost_1_1simd_a77a6f4066a63c0eb1a0058c8c53dc761.html#a77a6f4066a63c0eb1a0058c8c53dc761">rem</a> (%) </td><td align="center"><a class="el" href="group__group-arithmetic_ga5317bede3e8e600a8d251111840ff8e2.html#ga5317bede3e8e600a8d251111840ff8e2">sqrt</a> </td></tr>
 </table>
 </center><p class="startli">Boost.SIMD provides its own scalar and simd versions, but allows the use of the std_ decorator to call the associated system library function if the user needs it.</p>
 </li>
@@ -259,10 +260,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3fd74a7da9bd716454ee2cc29e149ec5"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-arithmetic_ga3fd74a7da9bd716454ee2cc29e149ec5.html#ga3fd74a7da9bd716454ee2cc29e149ec5">boost::simd::dist</a> (Option const &amp;o, Value const &amp;v0, Value const &amp;v1)</td></tr>
 <tr class="memdesc:ga3fd74a7da9bd716454ee2cc29e149ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing dist.  <a href="group__group-arithmetic_ga3fd74a7da9bd716454ee2cc29e149ec5.html#ga3fd74a7da9bd716454ee2cc29e149ec5">More...</a><br /></td></tr>
 <tr class="separator:ga3fd74a7da9bd716454ee2cc29e149ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf3364d8895c8f13361ac887168514da0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gaf3364d8895c8f13361ac887168514da0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__group-arithmetic_gaf3364d8895c8f13361ac887168514da0.html#gaf3364d8895c8f13361ac887168514da0">boost::simd::div</a> (Option const &amp;o, T const &amp;a, T const &amp;b)</td></tr>
-<tr class="memdesc:gaf3364d8895c8f13361ac887168514da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the quotient of the two parameters of the same type with or without options.  <a href="group__group-arithmetic_gaf3364d8895c8f13361ac887168514da0.html#gaf3364d8895c8f13361ac887168514da0">More...</a><br /></td></tr>
-<tr class="separator:gaf3364d8895c8f13361ac887168514da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43cc7eaf142659b94140621779298555"><td class="memTemplParams" colspan="2">template&lt;typename Value , typename Offset &gt; </td></tr>
 <tr class="memitem:ga43cc7eaf142659b94140621779298555"><td class="memTemplItemLeft" align="right" valign="top">scalar_of_t&lt; Value &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__group-arithmetic_ga43cc7eaf142659b94140621779298555.html#ga43cc7eaf142659b94140621779298555">boost::simd::extract</a> (Value const &amp;v, Offset const &amp;o)</td></tr>
 <tr class="memdesc:ga43cc7eaf142659b94140621779298555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random-access extraction of a value subcomponent.  <a href="group__group-arithmetic_ga43cc7eaf142659b94140621779298555.html#ga43cc7eaf142659b94140621779298555">More...</a><br /></td></tr>
@@ -342,9 +339,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6cd7bc7d1fee2bbf8ccf8b7317d10197"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-arithmetic_ga6cd7bc7d1fee2bbf8ccf8b7317d10197.html#ga6cd7bc7d1fee2bbf8ccf8b7317d10197">boost::simd::refine_rec</a> (Value const &amp;v0, Value const &amp;est)</td></tr>
 <tr class="memdesc:ga6cd7bc7d1fee2bbf8ccf8b7317d10197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing refine_rec capabilities.  <a href="group__group-arithmetic_ga6cd7bc7d1fee2bbf8ccf8b7317d10197.html#ga6cd7bc7d1fee2bbf8ccf8b7317d10197">More...</a><br /></td></tr>
 <tr class="separator:ga6cd7bc7d1fee2bbf8ccf8b7317d10197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77a6f4066a63c0eb1a0058c8c53dc761"><td class="memItemLeft" align="right" valign="top">Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-arithmetic_ga77a6f4066a63c0eb1a0058c8c53dc761.html#ga77a6f4066a63c0eb1a0058c8c53dc761">boost::simd::rem</a> (Value const &amp;v0, value const &amp;y)</td></tr>
-<tr class="memdesc:ga77a6f4066a63c0eb1a0058c8c53dc761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing rem capabilities.  <a href="group__group-arithmetic_ga77a6f4066a63c0eb1a0058c8c53dc761.html#ga77a6f4066a63c0eb1a0058c8c53dc761">More...</a><br /></td></tr>
-<tr class="separator:ga77a6f4066a63c0eb1a0058c8c53dc761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84b515e08825817b282d619d6354f1d7"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group-arithmetic_ga84b515e08825817b282d619d6354f1d7.html#ga84b515e08825817b282d619d6354f1d7">boost::simd::remquo</a> (Value const &amp;v0, Value const &amp;y, IntegerValue const &amp;quo)</td></tr>
 <tr class="memdesc:ga84b515e08825817b282d619d6354f1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function object implementing remquo capabilities.  <a href="group__group-arithmetic_ga84b515e08825817b282d619d6354f1d7.html#ga84b515e08825817b282d619d6354f1d7">More...</a><br /></td></tr>
 <tr class="separator:ga84b515e08825817b282d619d6354f1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,7 +400,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 26 2016 20:43:56 for Boost.SIMD by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 5 2016 22:03:38 for Boost.SIMD by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

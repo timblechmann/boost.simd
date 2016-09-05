@@ -22,7 +22,7 @@ var searchData=
   ['allbits',['Allbits',['../group__group-constant_ga3fa422246df71a8dbd89effa342f61e1.html#ga3fa422246df71a8dbd89effa342f61e1',1,'boost::simd']]],
   ['any',['any',['../group__group-reduction_ga52c638df0870180b27b9f987945b999a.html#ga52c638df0870180b27b9f987945b999a',1,'boost::simd']]],
   ['arg',['arg',['../group__group-arithmetic_ga2b0cf0f28f0eceb90e54a3c2fe37f25c.html#ga2b0cf0f28f0eceb90e54a3c2fe37f25c',1,'boost::simd']]],
-  ['asec',['asec',['../group__group-trigonometric_ga59a8241c05ca26385109d41a2658d000.html#ga59a8241c05ca26385109d41a2658d000',1,'boost::simd']]],
+  ['asec',['asec',['../group__group-trigonometric_ga94e137132fd68ec6812a601af91a3290.html#ga94e137132fd68ec6812a601af91a3290',1,'boost::simd']]],
   ['asecd',['asecd',['../group__group-trigonometric_ga12c69c1ea611b8ead26951509db6dbd5.html#ga12c69c1ea611b8ead26951509db6dbd5',1,'boost::simd']]],
   ['asech',['asech',['../group__group-hyperbolic_ga313830e2104f9c95b524fea32ad43e68.html#ga313830e2104f9c95b524fea32ad43e68',1,'boost::simd']]],
   ['asecpi',['asecpi',['../group__group-trigonometric_gacf7eec08f450778a360adb995a578349.html#gacf7eec08f450778a360adb995a578349',1,'boost::simd']]],

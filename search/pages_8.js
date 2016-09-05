@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['simd_20branching',['Simd Branching',['../tutorial-branching.html',1,'']]],
-  ['simd_20reductions',['SIMD Reductions',['../tutorial-reduction.html',1,'']]]
+  ['runtime_20extension_20selection',['Runtime Extension Selection',['../tutorial-runtime.html',1,'']]]
 ];

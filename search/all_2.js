@@ -22,7 +22,7 @@ var searchData=
   ['conformant_5ftag',['conformant_tag',['../structboost_1_1simd_1_1conformant__tag.html',1,'boost::simd']]],
   ['conj',['conj',['../group__group-arithmetic_ga4b2b61f38f7950e963b9bb2aefc9f06a.html#ga4b2b61f38f7950e963b9bb2aefc9f06a',1,'boost::simd']]],
   ['constant',['Constant',['../group__group-constant_ga9b29f5ae6a09c212cea1b4e0554baefe.html#ga9b29f5ae6a09c212cea1b4e0554baefe',1,'boost::simd']]],
-  ['copysign',['copysign',['../group__group-ieee_ga349c52cb8ca7a8c90f0f73a65229dec0.html#ga349c52cb8ca7a8c90f0f73a65229dec0',1,'boost::simd']]],
+  ['copysign',['copysign',['../group__group-ieee_gaf90aec9839663942cdbee8c1e83ef06c.html#gaf90aec9839663942cdbee8c1e83ef06c',1,'boost::simd']]],
   ['correct_5ffma',['correct_fma',['../group__group-arithmetic_ga7a6dfa6c62aeede5c80eb3110096c21b.html#ga7a6dfa6c62aeede5c80eb3110096c21b',1,'boost::simd']]],
   ['cos',['cos',['../group__group-trigonometric_gad6ba51f9c876a655ee68bcd761c8c91a.html#gad6ba51f9c876a655ee68bcd761c8c91a',1,'boost::simd']]],
   ['cosd',['cosd',['../group__group-trigonometric_ga2b7faa56b086bd28318dd26652705489.html#ga2b7faa56b086bd28318dd26652705489',1,'boost::simd']]],

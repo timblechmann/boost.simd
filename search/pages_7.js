@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['runtime_20extension_20selection',['Runtime Extension Selection',['../tutorial-runtime.html',1,'']]]
+  ['quick_20start',['Quick Start',['../QuickStart.html',1,'']]]
 ];

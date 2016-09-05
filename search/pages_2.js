@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hello_20world',['Hello World',['../tutorial-hello.html',1,'']]]
+  ['frequently_20asked_20questions',['Frequently Asked Questions',['../faq.html',1,'']]]
 ];
