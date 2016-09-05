@@ -41,7 +41,7 @@ var searchData=
   ['as_5flogical_3c_20logical_3c_20t_20_3e_2c_20f_20_3e',['as_logical&lt; logical&lt; T &gt;, F &gt;',['../structboost_1_1simd_1_1details_1_1as__logical_3_01logical_3_01_t_01_4_00_01_f_01_4.html',1,'boost::simd::details']]],
   ['as_5flogical_3c_20real_5fof_5ft_3c_20t_20_3e_2c_20dispatch_3a_3afactory_5fof_3c_20t_2c_20dispatch_3a_3ascalar_5fof_5ft_3c_20t_20_3e_20_3e_20_3e',['as_logical&lt; real_of_t&lt; T &gt;, dispatch::factory_of&lt; T, dispatch::scalar_of_t&lt; T &gt; &gt; &gt;',['../structboost_1_1simd_1_1details_1_1as__logical.html',1,'boost::simd::details']]],
   ['as_5flogical_5ft',['as_logical_t',['../group__group-api.html#gac9321575814335dc65c677b6854f6415',1,'boost::simd']]],
-  ['asec',['asec',['../group__group-trigonometric_ga94e137132fd68ec6812a601af91a3290.html#ga94e137132fd68ec6812a601af91a3290',1,'boost::simd']]],
+  ['asec',['asec',['../group__group-trigonometric_ga59a8241c05ca26385109d41a2658d000.html#ga59a8241c05ca26385109d41a2658d000',1,'boost::simd']]],
   ['asecd',['asecd',['../group__group-trigonometric_ga12c69c1ea611b8ead26951509db6dbd5.html#ga12c69c1ea611b8ead26951509db6dbd5',1,'boost::simd']]],
   ['asech',['asech',['../group__group-hyperbolic_ga313830e2104f9c95b524fea32ad43e68.html#ga313830e2104f9c95b524fea32ad43e68',1,'boost::simd']]],
   ['asecpi',['asecpi',['../group__group-trigonometric_gacf7eec08f450778a360adb995a578349.html#gacf7eec08f450778a360adb995a578349',1,'boost::simd']]],

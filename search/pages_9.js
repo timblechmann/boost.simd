@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['simd_20branching',['SIMD Branching',['../tutorial-branching.html',1,'']]],
-  ['simd_20reductions',['SIMD Reductions',['../tutorial-reduction.html',1,'']]]
+  ['tutorial_5falgorithm',['tutorial_algorithm',['../md__home_akelly_dev_bSIMDdoc_boost.simd_doc_tutorial_algorithm.html',1,'']]],
+  ['transcendental_20functions',['Transcendental Functions',['../tutorial-transcendental.html',1,'']]],
+  ['tutorials',['Tutorials',['../tutorials.html',1,'']]]
 ];

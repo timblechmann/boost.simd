@@ -10,7 +10,6 @@ var searchData=
   ['fact_5f8',['Fact_8',['../group__group-constant_ga9b29bda6e87d4f81bf89ba226c95573d.html#ga9b29bda6e87d4f81bf89ba226c95573d',1,'boost::simd']]],
   ['fact_5f9',['Fact_9',['../group__group-constant_gade3407407692c949afbb0e6ec450d101.html#gade3407407692c949afbb0e6ec450d101',1,'boost::simd']]],
   ['false',['False',['../group__group-constant_ga42d43c849a0e594a45f8315331755d51.html#ga42d43c849a0e594a45f8315331755d51',1,'boost::simd']]],
-  ['frequently_20asked_20questions',['Frequently Asked Questions',['../faq.html',1,'']]],
   ['fast_5f',['fast_',['../group__group-decorator_gaa725aacada7ea46138d5e1f15e430bcd.html#gaa725aacada7ea46138d5e1f15e430bcd',1,'boost::simd']]],
   ['fast_5ftag',['fast_tag',['../structboost_1_1simd_1_1fast__tag.html',1,'boost::simd']]],
   ['ffs',['ffs',['../group__group-bitwise_ga49f7f145448ca61b1b0ce178570912f7.html#ga49f7f145448ca61b1b0ce178570912f7',1,'boost::simd']]],

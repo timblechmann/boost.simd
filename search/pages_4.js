@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['introduction',['Introduction',['../index.html',1,'']]]
+  ['motivation',['Motivation',['../motivation.html',1,'']]],
+  ['memory_20alignment',['Memory Alignment',['../tutorial-memory.html',1,'']]]
 ];

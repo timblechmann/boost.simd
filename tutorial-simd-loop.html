@@ -29,7 +29,7 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="numscale.js"></script>
+<script type="text/javascript" src="doxy-boot.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -56,7 +56,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Home</span></a></li>
       <li><a href="QuickStart.html"><span>Quick&#160;Start</span></a></li>
       <li><a href="tutorials.html"><span>Tutorials</span></a></li>
-      <li><a href="faq.html"><span>FAQ</span></a></li>
       <li><a href="modules.html"><span>Reference&#160;documentation</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -136,7 +135,7 @@ Filling the loop</h2>
 <div class="fragment"><div class="line">  <span class="comment">// Using explicit load/store</span></div><div class="line">  pack_t p_out;</div><div class="line">  pack_t p_arr;</div><div class="line">  pack_t one28{scalar};</div><div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0 ; i &lt; size ; i += pack_card ) {</div><div class="line">    p_arr = bs::load&lt;pack_t&gt;(array.data() + i);</div><div class="line">    p_out = p_arr - one28;</div><div class="line">    <a class="code" href="namespaceboost_1_1simd_af5521b79da254d7133fa74cfaf547e10.html#af5521b79da254d7133fa74cfaf547e10">bs::store</a>(p_out , out.data() + i);</div><div class="line">  }</div></div><!-- fragment --> <h1><a class="anchor" id="sum-hanging-data"></a>
 What happens when the input data is not a multiple of the cardinal?</h1>
 <p>So, how do we handle the case where the input data is not a multiple of the cardinal? We simply write a scalar loop to handle this extra data.</p>
-<div class="fragment"><div class="line">  <span class="comment">// Using explicit load/store</span></div><div class="line">  <span class="comment">//set size to an arbitrary value</span></div><div class="line">  size = 133;</div><div class="line">  pack_t p_out;</div><div class="line">  pack_t p_arr;</div><div class="line">  pack_t one28{scalar};</div><div class="line">  <span class="keywordtype">size_t</span> i = 0;</div><div class="line">  <span class="keywordflow">for</span> (; i + pack_card &lt;= size ; i += pack_card ) {</div><div class="line">    p_arr = bs::load&lt;pack_t&gt;(array.data() + i);</div><div class="line">    p_out = p_arr - one28;</div><div class="line">    <a class="code" href="namespaceboost_1_1simd_af5521b79da254d7133fa74cfaf547e10.html#af5521b79da254d7133fa74cfaf547e10">bs::store</a>(p_out , out.data() + i);</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (; i &lt; size ; ++i){</div><div class="line">    out[i] = array[i] - scalar;</div><div class="line">  }</div></div><!-- fragment --><p> There are three main differences between this loop and the previous one. Firstly, the loop counter <code>i</code> is declared outside of the first loop. This is so that its value is retained for use in the second loop. The second difference is in seen in the first loops termination condition. The loop is now terminated when <code>i + pack_card &lt;= size</code>. We do this to ensure that we never load data which is past the end of the array. The third and final difference is the second loop. This is almost identical to the scalar loop at the start of this tutorial. The remaining elements in the input array, which are not sufficient to fill a pack are processed individually. A more elegant way of achieving this is demonstrated in the tutorial <a class="el" href="md__home_akelly_dev_bSIMDdoc_boost.simd2_boost.simd_doc_tutorial_algorithm.html#tutorial-algorithm">Algorithm</a> . </p>
+<div class="fragment"><div class="line">  <span class="comment">// Using explicit load/store</span></div><div class="line">  <span class="comment">//set size to an arbitrary value</span></div><div class="line">  size = 133;</div><div class="line">  pack_t p_out;</div><div class="line">  pack_t p_arr;</div><div class="line">  pack_t one28{scalar};</div><div class="line">  <span class="keywordtype">size_t</span> i = 0;</div><div class="line">  <span class="keywordflow">for</span> (; i + pack_card &lt;= size ; i += pack_card ) {</div><div class="line">    p_arr = bs::load&lt;pack_t&gt;(array.data() + i);</div><div class="line">    p_out = p_arr - one28;</div><div class="line">    <a class="code" href="namespaceboost_1_1simd_af5521b79da254d7133fa74cfaf547e10.html#af5521b79da254d7133fa74cfaf547e10">bs::store</a>(p_out , out.data() + i);</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (; i &lt; size ; ++i){</div><div class="line">    out[i] = array[i] - scalar;</div><div class="line">  }</div></div><!-- fragment --><p> There are three main differences between this loop and the previous one. Firstly, the loop counter <code>i</code> is declared outside of the first loop. This is so that its value is retained for use in the second loop. The second difference is in seen in the first loops termination condition. The loop is now terminated when <code>i + pack_card &lt;= size</code>. We do this to ensure that we never load data which is past the end of the array. The third and final difference is the second loop. This is almost identical to the scalar loop at the start of this tutorial. The remaining elements in the input array, which are not sufficient to fill a pack are processed individually. A more elegant way of achieving this is demonstrated in the tutorial <a class="el" href="md__home_akelly_dev_bSIMDdoc_boost.simd_doc_tutorial_algorithm.html#tutorial-algorithm">Algorithm</a> . </p>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
@@ -146,7 +145,7 @@ What happens when the input data is not a multiple of the cardinal?</h1>
 </div>
 </div>
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 5 2016 22:03:38 for Boost.SIMD by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 26 2016 20:43:56 for Boost.SIMD by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

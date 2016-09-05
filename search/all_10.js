@@ -16,10 +16,10 @@ var searchData=
   ['segmented_5finput_5frange',['segmented_input_range',['../namespaceboost_1_1simd_a23d70d1fc37077df86b161e6a930368b.html#a23d70d1fc37077df86b161e6a930368b',1,'boost::simd::segmented_input_range(Iterator b, Iterator e)'],['../namespaceboost_1_1simd_a5111b93e13bf88d181433ce2af43e34e.html#a5111b93e13bf88d181433ce2af43e34e',1,'boost::simd::segmented_input_range(Iterator begin, Iterator end) -&gt; decltype(segmented_input_range&lt; pack&lt; typename std::iterator_traits&lt; Iterator &gt;::value_type &gt;::static_size &gt;(begin, end))']]],
   ['segmented_5foutput_5frange',['segmented_output_range',['../namespaceboost_1_1simd_a6832f28e1ed3c0b5b454e10fe5d6a370.html#a6832f28e1ed3c0b5b454e10fe5d6a370',1,'boost::simd::segmented_output_range(Iterator b, Iterator e)'],['../namespaceboost_1_1simd_a7d7d8d139227312700ae34c03f77291f.html#a7d7d8d139227312700ae34c03f77291f',1,'boost::simd::segmented_output_range(Iterator begin, Iterator end) -&gt; decltype(segmented_output_range&lt; pack&lt; typename std::iterator_traits&lt; Iterator &gt;::value_type &gt;::static_size &gt;(begin, end))']]],
   ['seven',['Seven',['../group__group-constant_ga4a71a12d1eb773a9447391a2ceece4eb.html#ga4a71a12d1eb773a9447391a2ceece4eb',1,'boost::simd']]],
-  ['shift_5fleft',['shift_left',['../group__group-operator_ga66362e132a221d745cb9eb00155b0bf9.html#ga66362e132a221d745cb9eb00155b0bf9',1,'boost::simd']]],
-  ['shift_5fright',['shift_right',['../group__group-operator_gae52b980a4e49ef863836676b42fb8dc8.html#gae52b980a4e49ef863836676b42fb8dc8',1,'boost::simd']]],
+  ['shift_5fleft',['shift_left',['../group__group-operator_ga292767a2258d898b530bea80f37b8720.html#ga292767a2258d898b530bea80f37b8720',1,'boost::simd']]],
+  ['shift_5fright',['shift_right',['../group__group-operator_gafa8f864e68300fd448b549449f610331.html#gafa8f864e68300fd448b549449f610331',1,'boost::simd']]],
   ['shl',['shl',['../group__group-operator_ga9152a28144e221b2ce23afc1746230fc.html#ga9152a28144e221b2ce23afc1746230fc',1,'boost::simd']]],
-  ['shr',['shr',['../group__group-operator_gad99031bdf411d2085d1db26709c7ccf1.html#gad99031bdf411d2085d1db26709c7ccf1',1,'boost::simd']]],
+  ['shr',['shr',['../group__group-bitwise_gab757feefacb79adf859b93d1a7914b67.html#gab757feefacb79adf859b93d1a7914b67',1,'boost::simd']]],
   ['shuffle',['shuffle',['../group__group-swar_gaa21d0e1080d0709120a98e5352ab1cf4.html#gaa21d0e1080d0709120a98e5352ab1cf4',1,'boost::simd']]],
   ['sign',['sign',['../group__group-ieee_gaf43e76b52a11601f5ab9aba58a8027fa.html#gaf43e76b52a11601f5ab9aba58a8027fa',1,'boost::simd']]],
   ['signbit',['signbit',['../group__group-arithmetic_gaa93f3539600ed7a9f496b95bb48c47db.html#gaa93f3539600ed7a9f496b95bb48c47db',1,'boost::simd']]],
@@ -88,6 +88,6 @@ var searchData=
   ['sum',['sum',['../group__group-reduction_ga474846094a2e6c8f59ae86a1fc5cb720.html#ga474846094a2e6c8f59ae86a1fc5cb720',1,'boost::simd']]],
   ['swap',['swap',['../classboost_1_1simd_1_1pack.html#a49501bd261f5f54ff2160f64d914a314',1,'boost::simd::pack::swap()'],['../namespaceboost_1_1simd.html#a5cc1be497c55a86e7966fe31d83697e2',1,'boost::simd::swap()']]],
   ['swapbytes',['swapbytes',['../group__group-bitwise_gaadf64b7bf5a0ac9aac5844fd1cd59238.html#gaadf64b7bf5a0ac9aac5844fd1cd59238',1,'boost::simd']]],
-  ['simd_20branching',['SIMD Branching',['../tutorial-branching.html',1,'']]],
+  ['simd_20branching',['Simd Branching',['../tutorial-branching.html',1,'']]],
   ['simd_20reductions',['SIMD Reductions',['../tutorial-reduction.html',1,'']]]
 ];
