@@ -10,7 +10,6 @@ var searchData=
   ['masked_5fpointer_5f',['masked_pointer_',['../structboost_1_1dispatch_1_1masked__pointer__.html',1,'boost::dispatch']]],
   ['masked_5fpointer_5f_3c_20unspecified_5f_3c_20t_20_3e_2c_20zero_20_3e',['masked_pointer_&lt; unspecified_&lt; T &gt;, Zero &gt;',['../structboost_1_1dispatch_1_1masked__pointer___3_01unspecified___3_01_t_01_4_00_01_zero_01_4.html',1,'boost::dispatch']]],
   ['max',['max',['../group__group-arithmetic_ga38b0a4d86cba6e5acf01538a8f0d8b7d.html#ga38b0a4d86cba6e5acf01538a8f0d8b7d',1,'boost::simd']]],
-  ['max_5fsize',['max_size',['../classboost_1_1simd_1_1pack.html#a297fd39f5601153446b376ae6751ebc0',1,'boost::simd::pack']]],
   ['maximum',['maximum',['../group__group-reduction_ga71f20f05a6f3ddf5e3ed50bf20b67522.html#ga71f20f05a6f3ddf5e3ed50bf20b67522',1,'boost::simd']]],
   ['maxinit',['Maxinit',['../group__group-constant_ga403e9982e0da828e7b173a3f52236d77.html#ga403e9982e0da828e7b173a3f52236d77',1,'boost::simd']]],
   ['maxmag',['maxmag',['../group__group-ieee_ga253d7635aac3c93818503cf8135f0a0d.html#ga253d7635aac3c93818503cf8135f0a0d',1,'boost::simd']]],
