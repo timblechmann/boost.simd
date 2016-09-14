@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['begin',['begin',['../classboost_1_1simd_1_1pack.html#ab816a608439d27dde9af864b657b3ece',1,'boost::simd::pack::begin() BOOST_NOEXCEPT'],['../classboost_1_1simd_1_1pack_a2b62171816f087afcc935eb5b8f6dded.html#a2b62171816f087afcc935eb5b8f6dded',1,'boost::simd::pack::begin() const BOOST_NOEXCEPT']]],
   ['bitfloating',['bitfloating',['../group__group-ieee_gac98861958a7fe3fc394669e09ff488fa.html#gac98861958a7fe3fc394669e09ff488fa',1,'boost::simd']]],
   ['bitget',['bitget',['../group__group-bitwise_gad5097b0a6ff500d2f38d64b962a89a23.html#gad5097b0a6ff500d2f38d64b962a89a23',1,'boost::simd']]],
   ['bitincrement',['Bitincrement',['../group__group-constant_ga9898d7b7261b986467d07dc2f3547658.html#ga9898d7b7261b986467d07dc2f3547658',1,'boost::simd']]],
@@ -26,7 +27,6 @@ var searchData=
   ['boost_5fsimd_5fno_5fnans',['BOOST_SIMD_NO_NANS',['../group__group-config_ga42e67bf132fe75e51df9d2b2edaf60d2.html#ga42e67bf132fe75e51df9d2b2edaf60d2',1,'config.hpp']]],
   ['broadcast',['broadcast',['../group__group-swar_gad499dff2a4de8184aecc24eed78df3a6.html#gad499dff2a4de8184aecc24eed78df3a6',1,'boost::simd']]],
   ['concept',['concept',['../namespaceboost_1_1simd_1_1concept.html',1,'boost::simd']]],
-  ['ext',['ext',['../namespaceboost_1_1simd_1_1ext.html',1,'boost::simd']]],
   ['bitwise_20functions',['Bitwise functions',['../group__group-bitwise.html',1,'']]],
   ['boolean_20functions',['Boolean functions',['../group__group-boolean.html',1,'']]],
   ['simd',['simd',['../namespaceboost_1_1simd.html',1,'boost']]]

@@ -1,8 +1,10 @@
 var searchData=
 [
   ['cardinal',['cardinal',['../group__group-api_gabe9b001105eeb7b19d63240f3b578065.html#gabe9b001105eeb7b19d63240f3b578065',1,'boost::simd']]],
+  ['cbegin',['cbegin',['../classboost_1_1simd_1_1pack.html#af7bd1fbe5ec1fc4b2d7e1251a3668105',1,'boost::simd::pack']]],
   ['cbrt',['cbrt',['../group__group-exponential_ga5216b4755a56eda9d7bd739c6467e162.html#ga5216b4755a56eda9d7bd739c6467e162',1,'boost::simd']]],
   ['ceil',['ceil',['../group__group-arithmetic_ga3ef45f2082d6ec119f328c5b9db12ea2.html#ga3ef45f2082d6ec119f328c5b9db12ea2',1,'boost::simd']]],
+  ['cend',['cend',['../classboost_1_1simd_1_1pack.html#af15dd271ce91273ad902ba133e60f37e',1,'boost::simd::pack']]],
   ['cgold',['Cgold',['../group__group-constant_gab96a6164d269c11c6a067081d1402bfb.html#gab96a6164d269c11c6a067081d1402bfb',1,'boost::simd']]],
   ['clz',['clz',['../group__group-bitwise_ga0dc21980600645ebef5fc9e9ef9d7a83.html#ga0dc21980600645ebef5fc9e9ef9d7a83',1,'boost::simd']]],
   ['combine',['combine',['../group__group-swar_ga78687f5e9db2b82b76ab4a46d341cf1d.html#ga78687f5e9db2b82b76ab4a46d341cf1d',1,'boost::simd']]],
@@ -26,6 +28,8 @@ var searchData=
   ['cotd',['cotd',['../group__group-trigonometric_ga60a011950887f715dfdae4b08712b180.html#ga60a011950887f715dfdae4b08712b180',1,'boost::simd']]],
   ['coth',['coth',['../group__group-hyperbolic_ga8ea8a4359535bf54b66efb35528aa605.html#ga8ea8a4359535bf54b66efb35528aa605',1,'boost::simd']]],
   ['cotpi',['cotpi',['../group__group-trigonometric_ga446697a384b46caa3015886c295e33fd.html#ga446697a384b46caa3015886c295e33fd',1,'boost::simd']]],
+  ['crbegin',['crbegin',['../classboost_1_1simd_1_1pack.html#a9a370658bf85cfb085068b8fd3e4ca2c',1,'boost::simd::pack']]],
+  ['crend',['crend',['../classboost_1_1simd_1_1pack.html#aab73fa0263d666b9694e0ba54ca643d0',1,'boost::simd::pack']]],
   ['csc',['csc',['../group__group-trigonometric_ga531984008042ea6a6371c6faaf57e7e2.html#ga531984008042ea6a6371c6faaf57e7e2',1,'boost::simd']]],
   ['cscd',['cscd',['../group__group-trigonometric_gabe97027ab81331bbce547823e49ebe94.html#gabe97027ab81331bbce547823e49ebe94',1,'boost::simd']]],
   ['csch',['csch',['../group__group-hyperbolic_ga56c0940ba39769dc078f764753a9833e.html#ga56c0940ba39769dc078f764753a9833e',1,'boost::simd']]],

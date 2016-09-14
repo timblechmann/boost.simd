@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['begin',['begin',['../classboost_1_1simd_1_1pack.html#ab816a608439d27dde9af864b657b3ece',1,'boost::simd::pack::begin() BOOST_NOEXCEPT'],['../classboost_1_1simd_1_1pack_a2b62171816f087afcc935eb5b8f6dded.html#a2b62171816f087afcc935eb5b8f6dded',1,'boost::simd::pack::begin() const BOOST_NOEXCEPT']]],
   ['bitfloating',['bitfloating',['../group__group-ieee_gac98861958a7fe3fc394669e09ff488fa.html#gac98861958a7fe3fc394669e09ff488fa',1,'boost::simd']]],
   ['bitget',['bitget',['../group__group-bitwise_gad5097b0a6ff500d2f38d64b962a89a23.html#gad5097b0a6ff500d2f38d64b962a89a23',1,'boost::simd']]],
   ['bitincrement',['Bitincrement',['../group__group-constant_ga9898d7b7261b986467d07dc2f3547658.html#ga9898d7b7261b986467d07dc2f3547658',1,'boost::simd']]],

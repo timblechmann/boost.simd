@@ -30,6 +30,8 @@ var searchData=
   ['any',['any',['../group__group-reduction_ga52c638df0870180b27b9f987945b999a.html#ga52c638df0870180b27b9f987945b999a',1,'boost::simd']]],
   ['apply',['apply',['../structboost_1_1dispatch_1_1ext_1_1model__of_3_01boost_1_1simd_1_1logical_3_01_t_01_4_01_4_1_1apply.html',1,'boost::dispatch::ext::model_of&lt; boost::simd::logical&lt; T &gt; &gt;']]],
   ['apply',['apply',['../structboost_1_1dispatch_1_1ext_1_1model__of_3_01boost_1_1simd_1_1pack_3_01_t_00_01_n_01_4_01_4_1_1apply.html',1,'boost::dispatch::ext::model_of&lt; boost::simd::pack&lt; T, N &gt; &gt;']]],
+  ['apply',['apply',['../structboost_1_1simd_1_1detail_1_1get__implementation_1_1apply.html',1,'boost::simd::detail::get_implementation']]],
+  ['apply',['apply',['../structboost_1_1simd_1_1detail_1_1get__implementation_3_01boost_1_1dispatch_1_1detail_1_1generic_3d3840252e42820eeec08439584abd7b.html',1,'boost::simd::detail::get_implementation&lt; boost::dispatch::detail::generic_dispatcher&lt; D, Tag &gt; &gt;']]],
   ['arg',['arg',['../group__group-arithmetic_ga2b0cf0f28f0eceb90e54a3c2fe37f25c.html#ga2b0cf0f28f0eceb90e54a3c2fe37f25c',1,'boost::simd']]],
   ['as_5farithmetic',['as_arithmetic',['../structboost_1_1simd_1_1as__arithmetic.html',1,'boost::simd']]],
   ['as_5farithmetic_5fimpl',['as_arithmetic_impl',['../structboost_1_1simd_1_1detail_1_1as__arithmetic__impl.html',1,'boost::simd::detail']]],

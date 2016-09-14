@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['library_20extension_20points',['Library extension points',['../group__group-ext.html',1,'']]],
   ['ldexp',['ldexp',['../group__group-ieee_ga9bf33e232f6c1c8de890de67b3a3d252.html#ga9bf33e232f6c1c8de890de67b3a3d252',1,'boost::simd']]],
   ['lo',['lo',['../group__group-bitwise_ga69de09f1a7bb342e2e46851fe9231631.html#ga69de09f1a7bb342e2e46851fe9231631',1,'boost::simd']]],
   ['load',['load',['../namespaceboost_1_1simd_a44f9b5b1a343b238a3a80a52365ec860.html#a44f9b5b1a343b238a3a80a52365ec860',1,'boost::simd::load(Pointer ptr, Offset o)'],['../namespaceboost_1_1simd_ab1c420f6cb90047d9bca6bd74acc28ab.html#ab1c420f6cb90047d9bca6bd74acc28ab',1,'boost::simd::load(Pointer ptr)']]],

@@ -7,6 +7,7 @@ var searchData=
   ['mask',['mask',['../group__group-api_ga1bbefb28560dc294581d3a45a1e3c972.html#ga1bbefb28560dc294581d3a45a1e3c972',1,'boost::simd::mask(T *ptr, Mask const &amp;status, U const &amp;def)'],['../namespaceboost_1_1simd_a6c4e7ab231a271a1c06364f0f2aee44d.html#a6c4e7ab231a271a1c06364f0f2aee44d',1,'boost::simd::mask(T *ptr, Mask const &amp;status)']]],
   ['mask2logical',['mask2logical',['../group__group-boolean_ga9d2d8e5e8703ef4c9da1db8948bf2ee0.html#ga9d2d8e5e8703ef4c9da1db8948bf2ee0',1,'boost::simd']]],
   ['max',['max',['../group__group-arithmetic_ga38b0a4d86cba6e5acf01538a8f0d8b7d.html#ga38b0a4d86cba6e5acf01538a8f0d8b7d',1,'boost::simd']]],
+  ['max_5fsize',['max_size',['../classboost_1_1simd_1_1pack.html#a297fd39f5601153446b376ae6751ebc0',1,'boost::simd::pack']]],
   ['maximum',['maximum',['../group__group-reduction_ga71f20f05a6f3ddf5e3ed50bf20b67522.html#ga71f20f05a6f3ddf5e3ed50bf20b67522',1,'boost::simd']]],
   ['maxinit',['Maxinit',['../group__group-constant_ga403e9982e0da828e7b173a3f52236d77.html#ga403e9982e0da828e7b173a3f52236d77',1,'boost::simd']]],
   ['maxmag',['maxmag',['../group__group-ieee_ga253d7635aac3c93818503cf8135f0a0d.html#ga253d7635aac3c93818503cf8135f0a0d',1,'boost::simd']]],

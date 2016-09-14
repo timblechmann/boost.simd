@@ -16,7 +16,7 @@ var searchData=
   ['threepio_5f4',['Threepio_4',['../group__group-constant_gabcc32ee24428b0f142feb9899dcab5b3.html#gabcc32ee24428b0f142feb9899dcab5b3',1,'boost::simd']]],
   ['tofloat',['tofloat',['../group__group-arithmetic_ga86c1bb41b8df9c41039be4d62e9b5d25.html#ga86c1bb41b8df9c41039be4d62e9b5d25',1,'boost::simd']]],
   ['toint',['toint',['../group__group-arithmetic_gaee229ae5aca5999e4ed654376e7026df.html#gaee229ae5aca5999e4ed654376e7026df',1,'boost::simd']]],
-  ['transform',['transform',['../group__group-std_ga4b861300a4f001eb64023e4e98a169b7.html#ga4b861300a4f001eb64023e4e98a169b7',1,'boost::simd']]],
+  ['transform',['transform',['../group__group-std_ga4b861300a4f001eb64023e4e98a169b7.html#ga4b861300a4f001eb64023e4e98a169b7',1,'boost::simd::transform(T const *first, T const *last, U *out, UnOp f)'],['../group__group-std_ga41634d52d86b949c1edcd649d968779d.html#ga41634d52d86b949c1edcd649d968779d',1,'boost::simd::transform(T1 const *first1, T1 const *last1, T2 const *first2, U *out, BinOp f)']]],
   ['true',['True',['../group__group-constant_ga990a7661b7bc05c1da57603955d355f2.html#ga990a7661b7bc05c1da57603955d355f2',1,'boost::simd']]],
   ['trunc',['trunc',['../group__group-arithmetic_gae1d08930d80bd9f517ace4fe2eead9f8.html#gae1d08930d80bd9f517ace4fe2eead9f8',1,'boost::simd']]],
   ['twelve',['Twelve',['../group__group-constant_gaab5a51777c4bb72575d7ff130eeba8c2.html#gaab5a51777c4bb72575d7ff130eeba8c2',1,'boost::simd::Twelve()'],['../group__group-constant_ga7307cf55693872774f02ca3162b3ce7d.html#ga7307cf55693872774f02ca3162b3ce7d',1,'boost::simd::functional::Twelve()']]],

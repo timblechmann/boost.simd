@@ -10,6 +10,7 @@ var searchData=
   ['masked_5fpointer_5f',['masked_pointer_',['../structboost_1_1dispatch_1_1masked__pointer__.html',1,'boost::dispatch']]],
   ['masked_5fpointer_5f_3c_20unspecified_5f_3c_20t_20_3e_2c_20zero_20_3e',['masked_pointer_&lt; unspecified_&lt; T &gt;, Zero &gt;',['../structboost_1_1dispatch_1_1masked__pointer___3_01unspecified___3_01_t_01_4_00_01_zero_01_4.html',1,'boost::dispatch']]],
   ['max',['max',['../group__group-arithmetic_ga38b0a4d86cba6e5acf01538a8f0d8b7d.html#ga38b0a4d86cba6e5acf01538a8f0d8b7d',1,'boost::simd']]],
+  ['max_5fsize',['max_size',['../classboost_1_1simd_1_1pack.html#a297fd39f5601153446b376ae6751ebc0',1,'boost::simd::pack']]],
   ['maximum',['maximum',['../group__group-reduction_ga71f20f05a6f3ddf5e3ed50bf20b67522.html#ga71f20f05a6f3ddf5e3ed50bf20b67522',1,'boost::simd']]],
   ['maxinit',['Maxinit',['../group__group-constant_ga403e9982e0da828e7b173a3f52236d77.html#ga403e9982e0da828e7b173a3f52236d77',1,'boost::simd']]],
   ['maxmag',['maxmag',['../group__group-ieee_ga253d7635aac3c93818503cf8135f0a0d.html#ga253d7635aac3c93818503cf8135f0a0d',1,'boost::simd']]],
@@ -39,7 +40,6 @@ var searchData=
   ['models_5ft',['models_t',['../classboost_1_1dispatch_1_1models__t.html',1,'']]],
   ['modf',['modf',['../group__group-ieee_ga9bbf433986ecb279fdadc3ce2edab154.html#ga9bbf433986ecb279fdadc3ce2edab154',1,'boost::simd']]],
   ['mone',['Mone',['../group__group-constant_ga0da1119b39a28238e137cdbf198005c0.html#ga0da1119b39a28238e137cdbf198005c0',1,'boost::simd']]],
-  ['motivation',['Motivation',['../motivation.html',1,'']]],
   ['mseven',['Mseven',['../group__group-constant_gaac0bcbb1bfecb368eaf5b0f5ffdf3278.html#gaac0bcbb1bfecb368eaf5b0f5ffdf3278',1,'boost::simd']]],
   ['msix',['Msix',['../group__group-constant_ga3b19b4e5f45654e43865c11afb48b970.html#ga3b19b4e5f45654e43865c11afb48b970',1,'boost::simd']]],
   ['mten',['Mten',['../group__group-constant_ga2257146c03f812dac5e5c4eae632f4d6.html#ga2257146c03f812dac5e5c4eae632f4d6',1,'boost::simd']]],
@@ -47,5 +47,6 @@ var searchData=
   ['mtwo',['Mtwo',['../group__group-constant_ga77ef71dd032d9d711802fc7b7c1a4e8e.html#ga77ef71dd032d9d711802fc7b7c1a4e8e',1,'boost::simd']]],
   ['multiplies',['multiplies',['../group__group-operator_gad3c70023fde6f8197adff17686a13397.html#gad3c70023fde6f8197adff17686a13397',1,'boost::simd']]],
   ['mzero',['Mzero',['../group__group-constant_ga3266df6b26e45549daa1ffccc85a10e9.html#ga3266df6b26e45549daa1ffccc85a10e9',1,'boost::simd']]],
+  ['mathematical_20functions',['Mathematical Functions',['../tutorial-mathematical.html',1,'']]],
   ['memory_20alignment',['Memory Alignment',['../tutorial-memory.html',1,'']]]
 ];
