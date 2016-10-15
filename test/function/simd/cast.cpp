@@ -45,16 +45,17 @@ void test_val(Env& $)
 {
   static const std::size_t N = T::static_size;
   T x(2);
-  STF_EQUAL(bs::cast<std::int8_t  >(x), (pack<std::int8_t  ,N>(x)));
-  STF_EQUAL(bs::cast<std::int16_t >(x), (pack<std::int16_t ,N>(x)));
-  STF_EQUAL(bs::cast<std::int32_t >(x), (pack<std::int32_t ,N>(x)));
-  STF_EQUAL(bs::cast<std::int64_t >(x), (pack<std::int64_t ,N>(x)));
-  STF_EQUAL(bs::cast<std::uint8_t >(x), (pack<std::uint8_t ,N>(x)));
-  STF_EQUAL(bs::cast<std::uint16_t>(x), (pack<std::uint16_t,N>(x)));
-  STF_EQUAL(bs::cast<std::uint32_t>(x), (pack<std::uint32_t,N>(x)));
-  STF_EQUAL(bs::cast<std::uint64_t>(x), (pack<std::uint64_t,N>(x)));
-  STF_EQUAL(bs::cast<float        >(x), (pack<float        ,N>(x)));
-  STF_EQUAL(bs::cast<double       >(x), (pack<double       ,N>(x)));
+  STF_EQUAL(x, x);
+  STF_EQUAL(bs::cast<std::int8_t  >(x), (pack<std::int8_t  ,N>(2)));
+  STF_EQUAL(bs::cast<std::int16_t >(x), (pack<std::int16_t ,N>(2)));
+  STF_EQUAL(bs::cast<std::int32_t >(x), (pack<std::int32_t ,N>(2)));
+  STF_EQUAL(bs::cast<std::int64_t >(x), (pack<std::int64_t ,N>(2)));
+  STF_EQUAL(bs::cast<std::uint8_t >(x), (pack<std::uint8_t ,N>(2)));
+  STF_EQUAL(bs::cast<std::uint16_t>(x), (pack<std::uint16_t,N>(2)));
+  STF_EQUAL(bs::cast<std::uint32_t>(x), (pack<std::uint32_t,N>(2)));
+  STF_EQUAL(bs::cast<std::uint64_t>(x), (pack<std::uint64_t,N>(2)));
+  STF_EQUAL(bs::cast<float        >(x), (pack<float        ,N>(2)));
+  STF_EQUAL(bs::cast<double       >(x), (pack<double       ,N>(2)));
 }
 
 
@@ -62,8 +63,8 @@ STF_CASE_TPL( "Check cast behavior",  STF_NUMERIC_TYPES )
 {
   static const std::size_t N = bs::pack<T>::static_size;
 
-  test_type<bs::pack<T, N>>($);
-  test_type<bs::pack<T, N/2>>($);
-  test_type<bs::pack<T, N*2>>($);
+  test_val<bs::pack<T, N>>($);
+  test_val<bs::pack<T, N/2>>($);
+  test_val<bs::pack<T, N*2>>($);
 
 }

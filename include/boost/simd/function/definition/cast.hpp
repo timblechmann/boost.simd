@@ -33,7 +33,7 @@ namespace boost { namespace simd
   }
 
   template < typename Target,  typename Arg > BOOST_FORCEINLINE
-  Target cast(Arg&& a0) BOOST_NOEXCEPT
+  auto cast(Arg&& a0) BOOST_NOEXCEPT -> decltype(functional::cast(std::forward<Arg>(a0), boost::dispatch::as_<Target>{}))
   {
     return functional::cast(std::forward<Arg>(a0), boost::dispatch::as_<Target>{});
   }

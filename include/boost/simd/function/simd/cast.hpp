@@ -14,14 +14,14 @@
 #include <boost/simd/arch/common/generic/function/autodispatcher.hpp>
 #include <boost/simd/arch/common/simd/function/cast.hpp>
 
-// #if defined(BOOST_HW_SIMD_X86_OR_AMD_AVAILABLE)
-// #  if BOOST_HW_SIMD_X86_OR_AMD >= BOOST_HW_SIMD_X86_SSE2_VERSION
-// #    include <boost/simd/arch/x86/sse2/simd/function/cast.hpp>
-// #  endif
+#if defined(BOOST_HW_SIMD_X86_OR_AMD_AVAILABLE)
+#  if BOOST_HW_SIMD_X86_OR_AMD >= BOOST_HW_SIMD_X86_SSE2_VERSION
+#    include <boost/simd/arch/x86/sse2/simd/function/cast.hpp>
+#  endif
 // #  if BOOST_HW_SIMD_X86_OR_AMD >= BOOST_HW_SIMD_X86_AVX_VERSION
 // #    include <boost/simd/arch/x86/avx/simd/function/cast.hpp>
 // #  endif
-// #endif
+#endif
 
 // #if defined(BOOST_HW_SIMD_PPC_AVAILABLE)
 // #  if BOOST_HW_SIMD_PPC >= BOOST_HW_SIMD_PPC_VMX_VERSION

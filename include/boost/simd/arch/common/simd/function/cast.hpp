@@ -35,10 +35,10 @@ namespace boost { namespace simd { namespace ext
     {
       std::cout << "NAIVE_CAST" << std::endl;
       result_t r;
-//       for(size_t i=0; i < A0::static_size; ++i)
-//       {
-//         r[i] = static_cast<s_t>(a0[i]);
-//       }
+      for(size_t i=0; i < A0::static_size; ++i)
+      {
+        r[i] = static_cast<s_t>(a0[i]);
+      }
       return r;
     }
   };
