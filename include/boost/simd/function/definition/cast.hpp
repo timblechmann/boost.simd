@@ -16,6 +16,8 @@
 #include <boost/simd/detail/dispatch/hierarchy/functions.hpp>
 #include <boost/simd/detail/dispatch/as.hpp>
 #include <boost/simd/detail/dispatch.hpp>
+#include <boost/simd/detail/type_id.hpp>
+#include <boost/simd/pack.hpp>
 
 namespace boost { namespace simd
 {
@@ -35,6 +37,7 @@ namespace boost { namespace simd
   template < typename Target,  typename Arg > BOOST_FORCEINLINE
   auto cast(Arg&& a0) BOOST_NOEXCEPT -> decltype(functional::cast(std::forward<Arg>(a0), boost::dispatch::as_<Target>{}))
   {
+    std::cout << "Target " << detail::type_id<Target>() <<  " from " << detail::type_id<Arg>() <<  " in FUNCTION" << std::endl;
     return functional::cast(std::forward<Arg>(a0), boost::dispatch::as_<Target>{});
   }
 } }

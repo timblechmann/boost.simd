@@ -30,7 +30,7 @@ namespace boost { namespace simd { namespace ext
 
     BOOST_FORCEINLINE result_t operator()(A0 a0, A1 ) const BOOST_NOEXCEPT
     {
-      std::cout << "ICITTE" << std::endl;
+      std::cout << "SCALAR CAST" << std::endl;
       return static_cast<result_t>(a0);
     }
   };

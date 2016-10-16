@@ -27,6 +27,16 @@ namespace boost { namespace simd { namespace detail
         : brigand::bool_<sizeof(A0) == sizeof(A1)>
   {};
 
+  template<typename A0, typename A1, int N>
+  struct sizeof_ratio_is
+    : brigand::bool_<sizeof(A0) == (sizeof(A1)*N)>
+  {};
+
+  template<typename A0, typename A1, int N>
+  struct sizeof_ratio_is_greater
+    : brigand::bool_<(sizeof(A0) > (sizeof(A1)*N))>
+  {};
+
   template<typename X>
   struct is_native
         : brigand::bool_<!std::is_same<X,boost::simd::simd_emulation_>::value>
