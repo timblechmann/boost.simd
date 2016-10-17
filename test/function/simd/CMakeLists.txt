@@ -7,6 +7,7 @@
 ##===================================================================================================
 
 ## Larger test suites go there
+add_subdirectory(cast)
 add_subdirectory(combine)
 add_subdirectory(div)
 add_subdirectory(extract)
@@ -79,7 +80,6 @@ set ( SOURCES
       bitwise_select.cpp
       bitwise_xor.cpp
       broadcast.cpp
-      cast.cpp
       cbrt.cpp
       ceil.cpp
       clz.cpp
