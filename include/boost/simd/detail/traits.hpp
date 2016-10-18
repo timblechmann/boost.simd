@@ -28,7 +28,7 @@ namespace boost { namespace simd { namespace detail
   {};
 
   template<typename A0, typename A1, int N>
-  struct sizeof_ratio_is
+  struct sizeof_ratio_is_equal
     : brigand::bool_<sizeof(A0) == (sizeof(A1)*N)>
   {};
 
