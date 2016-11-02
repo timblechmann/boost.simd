@@ -1,12 +1,10 @@
 //==================================================================================================
-/*!
-    @file
+/**
+  Copyright 2016 Numscale SAS
 
-    @Copyright 2016 Numscale SAS
-
-    Distributed under the Boost Software License, Version 1.0.
-    (See accompanying file LICENSE.md or copy at http://boost.org/LICENSE_1_0.txt)
-*/
+  Distributed under the Boost Software License, Version 1.0.
+  (See accompanying file LICENSE.md or copy at http://boost.org/LICENSE_1_0.txt)
+**/
 //==================================================================================================
 #ifndef BOOST_SIMD_ARCH_X86_SSE2_SIMD_FUNCTION_CAST_HPP_INCLUDED
 #define BOOST_SIMD_ARCH_X86_SSE2_SIMD_FUNCTION_CAST_HPP_INCLUDED
@@ -17,10 +15,8 @@ namespace boost { namespace simd { namespace ext
   namespace bd =  boost::dispatch;
   namespace bs =  boost::simd;
 
- //////////////////////////////////////////////////////////////////////////////////////////////////
- // float to something
- //////////////////////////////////////////////////////////////////////////////////////////////////
- // float --> int32
+  //================================================================================================
+  // float --> int32
   BOOST_DISPATCH_OVERLOAD ( cast_
                           , (typename A0, typename A1)
                           , bs::sse2_
@@ -35,10 +31,7 @@ namespace boost { namespace simd { namespace ext
     }
   };
 
-//  //////////////////////////////////////////////////////////////////////////////////////////////////
-//  // int32 to something
-//  //////////////////////////////////////////////////////////////////////////////////////////////////
-
+  //================================================================================================
   // int32 --> float
   BOOST_DISPATCH_OVERLOAD ( cast_
                           , (typename A0, typename A1)
@@ -53,7 +46,6 @@ namespace boost { namespace simd { namespace ext
      return _mm_cvtepi32_ps(a0);
     }
   };
-
 } } }
 
 #endif

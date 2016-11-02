@@ -18,6 +18,7 @@ namespace boost { namespace simd { namespace ext
 {
   namespace bd = ::boost::dispatch;
   namespace bs = ::boost::simd;
+
   //------------------------------------------------------------------------------------------------
   // bitwise cvt int16<->int32
   BOOST_DISPATCH_OVERLOAD ( cast_
@@ -113,8 +114,6 @@ namespace boost { namespace simd { namespace ext
       return _mm256_cvtepu8_epi16(a0);
     }
   };
-
-
 } } }
 
 #endif
