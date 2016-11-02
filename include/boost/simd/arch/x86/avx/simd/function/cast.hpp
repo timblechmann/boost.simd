@@ -15,8 +15,9 @@ namespace boost { namespace simd { namespace ext
 {
   namespace bd = ::boost::dispatch;
   namespace bs = ::boost::simd;
+
   //------------------------------------------------------------------------------------------------
-  // bitwise cvt float<->int32
+  // bitwise cvtt float<->int32
   BOOST_DISPATCH_OVERLOAD ( cast_
                           , (typename A0, typename A1)
                           , bs::avx_
@@ -32,7 +33,7 @@ namespace boost { namespace simd { namespace ext
   };
 
   //------------------------------------------------------------------------------------------------
-  // bitwise cvt int32<->float
+  // bitwise cvtt int32<->float
   BOOST_DISPATCH_OVERLOAD ( cast_
                           , (typename A0, typename A1)
                           , bs::avx_
@@ -48,12 +49,12 @@ namespace boost { namespace simd { namespace ext
   };
 
   //------------------------------------------------------------------------------------------------
-  // bitwise cvt int32<->double
+  // bitwise cvtt int32<->double
   BOOST_DISPATCH_OVERLOAD ( cast_
                           , (typename A0, typename A1)
                           , bs::avx_
                           , bs::pack_<bd::int32_<A0>,bs::sse_>
-                          , bd::target_<bd::scalar_<bd::single_<A1>>>
+                          , bd::target_<bd::scalar_<bd::double_<A1>>>
                           )
   {
     using result = typename A0::template rebind<typename A1::type>;
@@ -64,7 +65,7 @@ namespace boost { namespace simd { namespace ext
   };
 
   //------------------------------------------------------------------------------------------------
-  // bitwise cvt double->int32
+  // bitwise cvtt double->int32
   BOOST_DISPATCH_OVERLOAD ( cast_
                           , (typename A0, typename A1)
                           , bs::sse_
@@ -80,7 +81,7 @@ namespace boost { namespace simd { namespace ext
   };
 
   //------------------------------------------------------------------------------------------------
-  // bitwise cvt double->float
+  // bitwise cvtt double->float
   BOOST_DISPATCH_OVERLOAD ( cast_
                           , (typename A0, typename A1)
                           , bs::sse_
@@ -96,7 +97,7 @@ namespace boost { namespace simd { namespace ext
   };
 
   //------------------------------------------------------------------------------------------------
-  // bitwise cvt float->double
+  // bitwise cvtt float->double
   BOOST_DISPATCH_OVERLOAD ( cast_
                           , (typename A0, typename A1)
                           , bs::avx_
@@ -107,7 +108,7 @@ namespace boost { namespace simd { namespace ext
     using result = typename A0::template rebind<typename A1::type>;
     BOOST_FORCEINLINE result operator()(A0 const& a0, A1 const&) const BOOST_NOEXCEPT
     {
-      return _mm256_cvttps_pd(a0);
+      return _mm256_cvtps_pd(a0);
     }
   };
 
