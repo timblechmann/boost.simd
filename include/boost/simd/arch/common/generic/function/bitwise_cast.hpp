@@ -1,7 +1,5 @@
 //==================================================================================================
-/*!
-  @file
-
+/**
   Copyright 2016 NumScale SAS
 
   Distributed under the Boost Software License, Version 1.0.
@@ -14,11 +12,9 @@
 #include <boost/simd/detail/dispatch/as.hpp>
 #include <boost/simd/detail/dispatch/hierarchy.hpp>
 #include <boost/simd/function/combine.hpp>
-#include <boost/simd/function/slice.hpp>
 #include <boost/simd/logical.hpp>
 #include <cstring>
 #include <type_traits>
-
 
 namespace boost { namespace simd { namespace ext
 {
@@ -50,7 +46,7 @@ namespace boost { namespace simd { namespace ext
     BOOST_FORCEINLINE result_t do_(A0 const& a0, aggregate_storage const& ) const BOOST_NOEXCEPT
     {
       using tgt_t = typename result_t::substorage_type;
-      return combine(bitwise_cast<tgt_t>(slice_low(a0)),bitwise_cast<tgt_t>(slice_high(a0)));
+      return combine(bitwise_cast<tgt_t>(a0.storage()[0]),bitwise_cast<tgt_t>(a0.storage()[1]));
     }
 
     template<typename K>
