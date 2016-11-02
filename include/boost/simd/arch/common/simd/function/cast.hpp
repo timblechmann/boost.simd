@@ -1,12 +1,10 @@
 //==================================================================================================
-/*!
-  @file
-
+/**
   Copyright 2016 NumScale SAS
 
   Distributed under the Boost Software License, Version 1.0.
   (See accompanying file LICENSE.md or copy at http://boost.org/LICENSE_1_0.txt)
-*/
+**/
 //==================================================================================================
 #ifndef BOOST_SIMD_ARCH_COMMON_SIMD_FUNCTION_CAST_HPP_INCLUDED
 #define BOOST_SIMD_ARCH_COMMON_SIMD_FUNCTION_CAST_HPP_INCLUDED
@@ -15,21 +13,15 @@
 #include <boost/simd/detail/dispatch/as.hpp>
 #include <boost/simd/detail/dispatch/hierarchy.hpp>
 #include <boost/simd/detail/dispatch/meta/as_integer.hpp>
-#include <boost/simd/detail/traits.hpp>
-#include <boost/simd/detail/type_id.hpp>
-#include <type_traits>
 #include <boost/simd/function/combine.hpp>
-#include <boost/simd/function/slice_low.hpp>
 #include <boost/simd/function/if_allbits_else_zero.hpp>
 #include <boost/simd/function/interleave.hpp>
 #include <boost/simd/function/interleave_first.hpp>
 #include <boost/simd/function/is_ltz.hpp>
 #include <boost/simd/constant/zero.hpp>
-
-// TODO improve the "take all" NAIVE part
-
-// this file already take care of the trivial (NO_CAST) part
-// and the semi-trivial cast from signed < -> unsigned of same size
+#include <boost/simd/detail/traits.hpp>
+#include <boost/simd/detail/type_id.hpp>
+#include <type_traits>
 
 namespace boost { namespace simd { namespace ext
 {
@@ -43,28 +35,34 @@ namespace boost { namespace simd { namespace ext
                           , bd::target_< bd::scalar_< bd::unspecified_<A1> > >
                           )
   {
-   using result = typename A0::template rebind<typename A1::type>;
+    using target_t  = typename A1::type;
+    using result    = typename A0::template rebind<target_t>;
 
     BOOST_FORCEINLINE result operator()(A0 const& a0, A1 const& ) const BOOST_NOEXCEPT
     {
       return do_(a0, typename std::is_same<A0, result>::type());
     }
 
+    BOOST_FORCEINLINE result do2_(A0 const& a0, aggregate_storage const& ) const BOOST_NOEXCEPT
+    {
+      return combine(cast<target_t>(a0.storage()[0]),cast<target_t>(a0.storage()[1]));
+    }
+
+    template<typename K>
+    BOOST_FORCEINLINE result do2_(A0 const& a0, K const& ) const BOOST_NOEXCEPT
+    {
+      result r;
+      for(size_t i=0; i < A0::static_size; ++i) r[i] = static_cast<typename A1::type>(a0[i]);
+      return r;
+    }
+
     BOOST_FORCEINLINE result do_(A0 const& a0, std::false_type ) const BOOST_NOEXCEPT
     {
-      using s_t =  typename A1::type;
-      std::cout << "target: " << detail::type_id<typename A1::type>() <<  " from " << detail::type_id<typename A0::value_type>() <<  " in NAIVE_CAST" <<  std::endl;
-      result r;
-      for(size_t i=0; i < A0::static_size; ++i)
-      {
-        r[i] = static_cast<s_t>(a0[i]);
-      }
-      return r;
+      return do2_(a0, typename A0::storage_kind{});
     }
 
     BOOST_FORCEINLINE result do_(A0 const& a0, std::true_type const& ) const BOOST_NOEXCEPT
     {
-      std::cout << "target " << detail::type_id<typename A1::type>() <<  " from " << detail::type_id<typename A0::value_type>() <<  " in NO_CAST" << std::endl;
       return a0;
     }
   };
@@ -81,8 +79,7 @@ namespace boost { namespace simd { namespace ext
 
     BOOST_FORCEINLINE result operator()(A0 const& a0, A1 const& ) const BOOST_NOEXCEPT
     {
-      std::cout << "target " << detail::type_id<typename A1::type>() <<  " from " << detail::type_id<typename A0::value_type>() <<  " in SIGNED->UNSIGNED" << std::endl;
-      return a0.storage();
+      return bitwise_cast<result>(a0);
     }
   };
 
@@ -98,8 +95,7 @@ namespace boost { namespace simd { namespace ext
 
     BOOST_FORCEINLINE result operator()(A0 const& a0, A1 const& ) const BOOST_NOEXCEPT
     {
-      std::cout << "target " << detail::type_id<typename A1::type>() <<  " from " << detail::type_id<typename A0::value_type>() <<  " in UNSIGNED->SIGNED" << std::endl;
-      return a0.storage();
+      return bitwise_cast<result>(a0);
     }
   };
 
@@ -119,7 +115,6 @@ namespace boost { namespace simd { namespace ext
     using siA1 = bd::as_integer_t<typename A1::type, signed>;
     BOOST_FORCEINLINE result operator() ( const A0 & a0, A1 const& ) const BOOST_NOEXCEPT
     {
-      std::cout << "target " << detail::type_id<typename A1::type>() <<  " from " << detail::type_id<typename A0::value_type>() <<  " in 00" << std::endl;
       return cast<siA1>(a0).storage();
     }
   };
@@ -140,7 +135,6 @@ namespace boost { namespace simd { namespace ext
     using siA1 = bd::as_integer_t<typename A1::type, signed>;
     BOOST_FORCEINLINE result operator() ( const A0 & a0, A1 const& ) const BOOST_NOEXCEPT
     {
-      std::cout << "target " << detail::type_id<typename A1::type>() <<  " from " << detail::type_id<typename A0::value_type>() <<  " in 9" << std::endl;
       return cast<siA1>(a0).storage();
     }
   };
@@ -402,8 +396,6 @@ namespace boost { namespace simd { namespace ext
       return cast<sA1>(cast<sdA1>(a0));
     }
   };
-
-
 } } }
 
 #endif
