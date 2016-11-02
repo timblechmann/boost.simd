@@ -20,7 +20,6 @@ STF_CASE( "Check cast behavior for uint64_t" )
   static const std::size_t N = bs::pack<uint64_t>::static_size;
 
   test_val<bs::pack<uint64_t, N>>($);
-//  test_val<bs::pack<uint64_t, N/2>>($);
-//  test_val<bs::pack<uint64_t, N*2>>($);
-
+  test_val<bs::pack<uint64_t, N/2>>($);
+  test_val<bs::pack<uint64_t, N*2>>($);
 }

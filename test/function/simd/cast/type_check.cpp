@@ -40,5 +40,3 @@ STF_CASE_TPL( "Check cast return type", STF_NUMERIC_TYPES )
   test_type<bs::pack<T, N/2>>($);
   test_type<bs::pack<T, N*2>>($);
 }
-
-

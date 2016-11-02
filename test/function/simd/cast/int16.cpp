@@ -20,7 +20,6 @@ STF_CASE( "Check cast behavior for int16_t" )
   static const std::size_t N = bs::pack<int16_t>::static_size;
 
   test_val<bs::pack<int16_t, N>>($);
-//  test_val<bs::pack<int16_t, N/2>>($);
-//  test_val<bs::pack<int16_t, N*2>>($);
-
+  test_val<bs::pack<int16_t, N/2>>($);
+  test_val<bs::pack<int16_t, N*2>>($);
 }
